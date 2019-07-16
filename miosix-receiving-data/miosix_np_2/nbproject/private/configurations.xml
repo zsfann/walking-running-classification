@@ -1,0 +1,3193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root=".." name="0">
+      <df name="miosix">
+        <df name="arch">
+          <df name="arm7_lpc2000">
+            <df name="common">
+              <df name="interfaces-impl">
+                <in>atomic_ops_impl.h</in>
+                <in>endianness_impl.h</in>
+              </df>
+              <in>arch_settings.h</in>
+            </df>
+            <df name="lpc2138_miosix_board">
+              <df name="core">
+                <in>stage_1_boot.s</in>
+              </df>
+              <df name="interfaces-impl">
+                <in>arch_registers_impl.h</in>
+                <in>bsp.cpp</in>
+                <in>bsp_impl.h</in>
+                <in>delays.cpp</in>
+                <in>gpio_impl.h</in>
+                <in>portability.cpp</in>
+                <in>portability_impl.h</in>
+              </df>
+              <in>LPC213x.h</in>
+            </df>
+          </df>
+          <df name="common">
+            <df name="CMSIS">
+              <df name="Device">
+                <df name="SiliconLabs">
+                  <df name="EFM32GG">
+                    <df name="Include">
+                      <in>efm32gg332f1024.h</in>
+                      <in>efm32gg_acmp.h</in>
+                      <in>efm32gg_adc.h</in>
+                      <in>efm32gg_aes.h</in>
+                      <in>efm32gg_af_pins.h</in>
+                      <in>efm32gg_af_ports.h</in>
+                      <in>efm32gg_burtc.h</in>
+                      <in>efm32gg_burtc_ret.h</in>
+                      <in>efm32gg_calibrate.h</in>
+                      <in>efm32gg_cmu.h</in>
+                      <in>efm32gg_dac.h</in>
+                      <in>efm32gg_devinfo.h</in>
+                      <in>efm32gg_dma.h</in>
+                      <in>efm32gg_dma_ch.h</in>
+                      <in>efm32gg_dma_descriptor.h</in>
+                      <in>efm32gg_dmactrl.h</in>
+                      <in>efm32gg_dmareq.h</in>
+                      <in>efm32gg_ebi.h</in>
+                      <in>efm32gg_emu.h</in>
+                      <in>efm32gg_etm.h</in>
+                      <in>efm32gg_gpio.h</in>
+                      <in>efm32gg_gpio_p.h</in>
+                      <in>efm32gg_i2c.h</in>
+                      <in>efm32gg_lcd.h</in>
+                      <in>efm32gg_lesense.h</in>
+                      <in>efm32gg_lesense_buf.h</in>
+                      <in>efm32gg_lesense_ch.h</in>
+                      <in>efm32gg_lesense_st.h</in>
+                      <in>efm32gg_letimer.h</in>
+                      <in>efm32gg_leuart.h</in>
+                      <in>efm32gg_msc.h</in>
+                      <in>efm32gg_pcnt.h</in>
+                      <in>efm32gg_prs.h</in>
+                      <in>efm32gg_prs_ch.h</in>
+                      <in>efm32gg_prs_signals.h</in>
+                      <in>efm32gg_rmu.h</in>
+                      <in>efm32gg_romtable.h</in>
+                      <in>efm32gg_rtc.h</in>
+                      <in>efm32gg_timer.h</in>
+                      <in>efm32gg_timer_cc.h</in>
+                      <in>efm32gg_uart.h</in>
+                      <in>efm32gg_usart.h</in>
+                      <in>efm32gg_usb.h</in>
+                      <in>efm32gg_usb_diep.h</in>
+                      <in>efm32gg_usb_doep.h</in>
+                      <in>efm32gg_usb_hc.h</in>
+                      <in>efm32gg_vcmp.h</in>
+                      <in>efm32gg_wdog.h</in>
+                      <in>em_device.h</in>
+                      <in>system_efm32gg.h</in>
+                    </df>
+                    <df name="Source">
+                      <in>system_efm32gg.c</in>
+                    </df>
+                  </df>
+                </df>
+                <df name="ST">
+                  <df name="STM32F10x">
+                    <df name="Include">
+                      <in>stm32f10x.h</in>
+                      <in>system_stm32f10x.h</in>
+                    </df>
+                    <df name="Source">
+                      <df name="Templates">
+                        <in>system_stm32f10x.c</in>
+                      </df>
+                    </df>
+                  </df>
+                  <df name="STM32F2xx">
+                    <df name="Include">
+                      <in>stm32f205xx.h</in>
+                      <in>stm32f207xx.h</in>
+                      <in>stm32f215xx.h</in>
+                      <in>stm32f217xx.h</in>
+                      <in>stm32f2xx.h</in>
+                      <in>system_stm32f2xx.h</in>
+                    </df>
+                    <df name="Source">
+                      <df name="Templates">
+                        <in>system_stm32f2xx.c</in>
+                      </df>
+                    </df>
+                  </df>
+                  <df name="STM32F4xx">
+                    <df name="Include">
+                      <in>stm32f401xc.h</in>
+                      <in>stm32f401xe.h</in>
+                      <in>stm32f405xx.h</in>
+                      <in>stm32f407xx.h</in>
+                      <in>stm32f411xe.h</in>
+                      <in>stm32f415xx.h</in>
+                      <in>stm32f417xx.h</in>
+                      <in>stm32f427xx.h</in>
+                      <in>stm32f429xx.h</in>
+                      <in>stm32f437xx.h</in>
+                      <in>stm32f439xx.h</in>
+                      <in>stm32f469xx.h</in>
+                      <in>stm32f4xx.h</in>
+                      <in>system_stm32f4xx.h</in>
+                    </df>
+                    <df name="Source">
+                      <df name="Templates">
+                        <in>system_stm32f4xx.c</in>
+                      </df>
+                    </df>
+                  </df>
+                  <df name="STM32F7xx">
+                    <df name="Include">
+                      <in>stm32f722xx.h</in>
+                      <in>stm32f723xx.h</in>
+                      <in>stm32f732xx.h</in>
+                      <in>stm32f733xx.h</in>
+                      <in>stm32f745xx.h</in>
+                      <in>stm32f746xx.h</in>
+                      <in>stm32f756xx.h</in>
+                      <in>stm32f765xx.h</in>
+                      <in>stm32f767xx.h</in>
+                      <in>stm32f769xx.h</in>
+                      <in>stm32f777xx.h</in>
+                      <in>stm32f779xx.h</in>
+                      <in>stm32f7xx.h</in>
+                      <in>system_stm32f7xx.h</in>
+                    </df>
+                    <df name="Source">
+                      <df name="Templates">
+                        <in>system_stm32f7xx.c</in>
+                      </df>
+                    </df>
+                  </df>
+                  <df name="STM32H7xx">
+                    <df name="Include">
+                      <in>stm32h743xx.h</in>
+                      <in>stm32h753xx.h</in>
+                      <in>stm32h7xx.h</in>
+                      <in>system_stm32h7xx.h</in>
+                    </df>
+                    <df name="Source">
+                      <df name="Templates">
+                        <in>system_stm32h7xx.c</in>
+                      </df>
+                    </df>
+                  </df>
+                  <df name="STM32L1xx">
+                    <df name="Include">
+                      <in>stm32l1xx.h</in>
+                      <in>system_stm32l1xx.h</in>
+                    </df>
+                    <df name="Source">
+                      <df name="Templates">
+                        <in>system_stm32l1xx.c</in>
+                      </df>
+                    </df>
+                  </df>
+                </df>
+              </df>
+              <df name="Documentation">
+                <df name="Core">
+                  <df name="html">
+                    <df name="search">
+                    </df>
+                  </df>
+                </df>
+                <df name="General">
+                  <df name="html">
+                  </df>
+                </df>
+                <df name="SVD">
+                  <df name="html">
+                  </df>
+                </df>
+              </df>
+              <df name="Include">
+                <in>arm_common_tables.h</in>
+                <in>arm_const_structs.h</in>
+                <in>arm_math.h</in>
+                <in>cmsis_gcc.h</in>
+                <in>core_cm0.h</in>
+                <in>core_cm0plus.h</in>
+                <in>core_cm3.h</in>
+                <in>core_cm4.h</in>
+                <in>core_cm7.h</in>
+                <in>core_cmFunc.h</in>
+                <in>core_cmInstr.h</in>
+                <in>core_cmSimd.h</in>
+                <in>core_sc000.h</in>
+                <in>core_sc300.h</in>
+              </df>
+              <df name="SVD">
+              </df>
+            </df>
+            <df name="core">
+              <in>atomic_ops_impl_arm7.h</in>
+              <in>atomic_ops_impl_cortexMx.h</in>
+              <in>cache_cortexMx.cpp</in>
+              <in>cache_cortexMx.h</in>
+              <in>endianness_impl_arm7.h</in>
+              <in>endianness_impl_cortexMx.h</in>
+              <in>interrupts.h</in>
+              <in>interrupts_arm7.cpp</in>
+              <in>interrupts_arm7.h</in>
+              <in>interrupts_cortexMx.cpp</in>
+              <in>interrupts_cortexMx.h</in>
+              <in>memory_protection.h</in>
+              <in>mpu_cortexMx.cpp</in>
+              <in>mpu_cortexMx.h</in>
+            </df>
+            <df name="drivers">
+              <in>dcc.cpp</in>
+              <in>dcc.h</in>
+              <in>sd_lpc2000.cpp</in>
+              <in>sd_lpc2000.h</in>
+              <in>sd_stm32f1.cpp</in>
+              <in>sd_stm32f1.h</in>
+              <in>sd_stm32f2_f4.cpp</in>
+              <in>sd_stm32f2_f4.h</in>
+              <in>serial.h</in>
+              <in>serial_efm32.cpp</in>
+              <in>serial_efm32.h</in>
+              <in>serial_lpc2000.cpp</in>
+              <in>serial_lpc2000.h</in>
+              <in>serial_stm32.cpp</in>
+              <in>serial_stm32.h</in>
+              <in>servo_stm32.cpp</in>
+              <in>servo_stm32.h</in>
+              <in>stm32_hardware_rng.cpp</in>
+              <in>stm32_hardware_rng.h</in>
+              <in>stm32_sgm.cpp</in>
+              <in>stm32_sgm.h</in>
+              <in>stm32_wd.cpp</in>
+              <in>stm32_wd.h</in>
+              <in>stm32f2_f4_i2c.cpp</in>
+              <in>stm32f2_f4_i2c.h</in>
+            </df>
+          </df>
+          <df name="cortexM3_efm32gg">
+            <df name="common">
+              <df name="interfaces-impl">
+                <in>arch_registers_impl.h</in>
+                <in>delays.cpp</in>
+                <in>gpio_impl.cpp</in>
+                <in>gpio_impl.h</in>
+                <in>portability.cpp</in>
+                <in>portability_impl.h</in>
+              </df>
+              <in>arch_settings.h</in>
+            </df>
+            <df name="efm32gg332f1024_wandstem">
+              <df name="core">
+                <in>stage_1_boot.cpp</in>
+              </df>
+              <df name="interfaces-impl">
+                <in>bsp.cpp</in>
+                <in>bsp_impl.h</in>
+                <in>cc2520_constants.h</in>
+                <in>gpioirq.cpp</in>
+                <in>gpioirq.h</in>
+                <in>hardware_timer.cpp</in>
+                <in>hardware_timer.h</in>
+                <in>hwmapping.h</in>
+                <in>power_manager.cpp</in>
+                <in>power_manager.h</in>
+                <in>spi.cpp</in>
+                <in>spi.h</in>
+                <in>transceiver.cpp</in>
+                <in>transceiver.h</in>
+              </df>
+            </df>
+          </df>
+          <df name="cortexM3_stm32">
+            <df name="common">
+              <df name="interfaces-impl">
+                <in>arch_registers_impl.h</in>
+                <in>atomic_ops_impl.h</in>
+                <in>delays.cpp</in>
+                <in>endianness_impl.h</in>
+                <in>gpio_impl.cpp</in>
+                <in>gpio_impl.h</in>
+                <in>portability.cpp</in>
+                <in>portability_impl.h</in>
+              </df>
+              <in>arch_settings.h</in>
+            </df>
+            <df name="stm32f100c8_microboard">
+              <df name="core">
+                <in>stage_1_boot.cpp</in>
+              </df>
+              <df name="drivers">
+                <in>rtc.cpp</in>
+                <in>rtc.h</in>
+              </df>
+              <df name="interfaces-impl">
+                <in>bsp.cpp</in>
+                <in>bsp_impl.h</in>
+                <in>hwmapping.h</in>
+              </df>
+            </df>
+            <df name="stm32f100cb_tempsensor">
+              <df name="core">
+                <in>stage_1_boot.cpp</in>
+              </df>
+              <df name="interfaces-impl">
+                <in>bsp.cpp</in>
+                <in>bsp_impl.h</in>
+              </df>
+            </df>
+            <df name="stm32f100rb_stm32vldiscovery">
+              <df name="core">
+                <in>stage_1_boot.cpp</in>
+              </df>
+              <df name="interfaces-impl">
+                <in>bsp.cpp</in>
+                <in>bsp_impl.h</in>
+              </df>
+            </df>
+            <df name="stm32f100rc_solertegiard">
+              <df name="core">
+                <in>stage_1_boot.cpp</in>
+              </df>
+              <df name="interfaces-impl">
+                <in>bsp.cpp</in>
+                <in>bsp_impl.h</in>
+                <in>hwmapping.h</in>
+              </df>
+            </df>
+            <df name="stm32f103c8_breakout">
+              <df name="core">
+                <in>stage_1_boot.cpp</in>
+              </df>
+              <df name="interfaces-impl">
+                <in>bsp.cpp</in>
+                <in>bsp_impl.h</in>
+              </df>
+            </df>
+            <df name="stm32f103cb_als_mainboard_rev2">
+              <df name="core">
+                <in>stage_1_boot.cpp</in>
+              </df>
+              <df name="interfaces-impl">
+                <in>bsp.cpp</in>
+                <in>bsp_impl.h</in>
+                <in>hwmapping.h</in>
+              </df>
+            </df>
+            <df name="stm32f103ve_mp3v2">
+              <df name="core">
+                <in>stage_1_boot.cpp</in>
+              </df>
+              <df name="interfaces-impl">
+                <in>bsp.cpp</in>
+                <in>bsp_impl.h</in>
+                <in>hwmapping.h</in>
+              </df>
+            </df>
+            <df name="stm32f103ve_strive_mini">
+              <df name="core">
+                <in>stage_1_boot.cpp</in>
+              </df>
+              <df name="interfaces-impl">
+                <in>bsp.cpp</in>
+                <in>bsp_impl.h</in>
+                <in>hwmapping.h</in>
+              </df>
+            </df>
+            <df name="stm32f103ze_redbull_v2">
+              <df name="core">
+                <in>stage_1_boot.cpp</in>
+              </df>
+              <df name="interfaces-impl">
+                <in>bsp.cpp</in>
+                <in>bsp_impl.h</in>
+                <in>hwmapping.h</in>
+              </df>
+            </df>
+            <df name="stm32f103ze_stm3210e-eval">
+              <df name="core">
+                <in>stage_1_boot.cpp</in>
+              </df>
+              <df name="interfaces-impl">
+                <in>bsp.cpp</in>
+                <in>bsp_impl.h</in>
+              </df>
+            </df>
+          </df>
+          <df name="cortexM3_stm32f2">
+            <df name="common">
+              <df name="interfaces-impl">
+                <in>atomic_ops_impl.h</in>
+                <in>endianness_impl.h</in>
+                <in>gpio_impl.cpp</in>
+                <in>gpio_impl.h</in>
+                <in>portability.cpp</in>
+                <in>portability_impl.h</in>
+              </df>
+              <in>arch_settings.h</in>
+            </df>
+            <df name="stm32f205_generic">
+              <df name="core">
+                <in>stage_1_boot.cpp</in>
+              </df>
+              <df name="interfaces-impl">
+                <in>arch_registers_impl.h</in>
+                <in>bsp.cpp</in>
+                <in>bsp_impl.h</in>
+                <in>delays.cpp</in>
+              </df>
+            </df>
+            <df name="stm32f205rc_skyward_stormtrooper">
+              <df name="core">
+                <in>stage_1_boot.cpp</in>
+              </df>
+              <df name="interfaces-impl">
+                <in>arch_registers_impl.h</in>
+                <in>bsp.cpp</in>
+                <in>bsp_impl.h</in>
+                <in>delays.cpp</in>
+                <in>hwmapping.h</in>
+              </df>
+            </df>
+            <df name="stm32f205rg_sony-newman">
+              <df name="core">
+                <in>stage_1_boot.cpp</in>
+              </df>
+              <df name="interfaces-impl">
+                <in>arch_registers_impl.h</in>
+                <in>bsp.cpp</in>
+                <in>bsp_impl.h</in>
+                <in>delays.cpp</in>
+                <in>hwmapping.h</in>
+              </df>
+            </df>
+            <df name="stm32f207ig_stm3220g-eval">
+              <df name="core">
+                <in>stage_1_boot.cpp</in>
+              </df>
+              <df name="interfaces-impl">
+                <in>arch_registers_impl.h</in>
+                <in>bsp.cpp</in>
+                <in>bsp_impl.h</in>
+                <in>delays.cpp</in>
+              </df>
+            </df>
+            <df name="stm32f207ze_als_camboard">
+              <df name="core">
+                <in>stage_1_boot.cpp</in>
+              </df>
+              <df name="interfaces-impl">
+                <in>arch_registers_impl.h</in>
+                <in>bsp.cpp</in>
+                <in>bsp_impl.h</in>
+                <in>delays.cpp</in>
+                <in>hwmapping.h</in>
+              </df>
+            </df>
+            <df name="stm32f207zg_EthBoardV2">
+              <df name="core">
+                <in>stage_1_boot.cpp</in>
+              </df>
+              <df name="interfaces-impl">
+                <in>arch_registers_impl.h</in>
+                <in>bsp.cpp</in>
+                <in>bsp_impl.h</in>
+                <in>delays.cpp</in>
+                <in>hwmapping.h</in>
+              </df>
+            </df>
+          </df>
+          <df name="cortexM3_stm32l1">
+            <df name="common">
+              <df name="interfaces-impl">
+                <in>arch_registers_impl.h</in>
+                <in>atomic_ops_impl.h</in>
+                <in>delays.cpp</in>
+                <in>endianness_impl.h</in>
+                <in>gpio_impl.cpp</in>
+                <in>gpio_impl.h</in>
+                <in>portability.cpp</in>
+                <in>portability_impl.h</in>
+              </df>
+              <in>arch_settings.h</in>
+            </df>
+            <df name="stm32l151c8_als_mainboard">
+              <df name="core">
+                <in>stage_1_boot.cpp</in>
+              </df>
+              <df name="interfaces-impl">
+                <in>bsp.cpp</in>
+                <in>bsp_impl.h</in>
+                <in>hwmapping.h</in>
+              </df>
+            </df>
+          </df>
+          <df name="cortexM4_stm32f4">
+            <df name="common">
+              <df name="interfaces-impl">
+                <in>delays.cpp</in>
+                <in>gpio_impl.cpp</in>
+                <in>gpio_impl.h</in>
+                <in>portability.cpp</in>
+                <in>portability_impl.h</in>
+              </df>
+              <in>arch_settings.h</in>
+            </df>
+            <df name="stm32f401re_nucleo">
+              <df name="core">
+                <in>stage_1_boot.cpp</in>
+              </df>
+              <df name="interfaces-impl">
+                <in>arch_registers_impl.h</in>
+                <in>bsp.cpp</in>
+                <in>bsp_impl.h</in>
+              </df>
+            </df>
+            <df name="stm32f401vc_stm32f4discovery">
+              <df name="core">
+                <in>stage_1_boot.cpp</in>
+              </df>
+              <df name="interfaces-impl">
+                <in>arch_registers_impl.h</in>
+                <in>bsp.cpp</in>
+                <in>bsp_impl.h</in>
+              </df>
+            </df>
+            <df name="stm32f407vg_bitsboard">
+              <df name="core">
+                <in>stage_1_boot.cpp</in>
+              </df>
+              <df name="interfaces-impl">
+                <in>arch_registers_impl.h</in>
+                <in>bsp.cpp</in>
+                <in>bsp_impl.h</in>
+              </df>
+            </df>
+            <df name="stm32f407vg_stm32f4discovery">
+              <df name="core">
+                <in>stage_1_boot.cpp</in>
+              </df>
+              <df name="interfaces-impl">
+                <in>arch_registers_impl.h</in>
+                <in>bsp.cpp</in>
+                <in>bsp_impl.h</in>
+              </df>
+            </df>
+            <df name="stm32f407vg_thermal_test_chip">
+              <df name="core">
+                <in>stage_1_boot.cpp</in>
+              </df>
+              <df name="interfaces-impl">
+                <in>arch_registers_impl.h</in>
+                <in>bsp.cpp</in>
+                <in>bsp_impl.h</in>
+              </df>
+            </df>
+            <df name="stm32f411re_nucleo">
+              <df name="core">
+                <in>stage_1_boot.cpp</in>
+              </df>
+              <df name="interfaces-impl">
+                <in>arch_registers_impl.h</in>
+                <in>bsp.cpp</in>
+                <in>bsp_impl.h</in>
+              </df>
+            </df>
+            <df name="stm32f429zi_oledboard2">
+              <df name="core">
+                <in>stage_1_boot.cpp</in>
+              </df>
+              <df name="interfaces-impl">
+                <in>arch_registers_impl.h</in>
+                <in>bsp.cpp</in>
+                <in>bsp_impl.h</in>
+                <in>hwmapping.h</in>
+              </df>
+            </df>
+            <df name="stm32f429zi_skyward_anakin">
+              <df name="core">
+                <in>stage_1_boot.cpp</in>
+              </df>
+              <df name="interfaces-impl">
+                <in>arch_registers_impl.h</in>
+                <in>bsp.cpp</in>
+                <in>bsp_impl.h</in>
+                <in>hwmapping.h</in>
+              </df>
+            </df>
+            <df name="stm32f429zi_skyward_homeone">
+              <df name="core">
+                <in>stage_1_boot.cpp</in>
+              </df>
+              <df name="interfaces-impl">
+                <in>arch_registers_impl.h</in>
+                <in>bsp.cpp</in>
+                <in>bsp_impl.h</in>
+                <in>hwmapping.h</in>
+              </df>
+            </df>
+            <df name="stm32f429zi_stm32f4discovery">
+              <df name="core">
+                <in>stage_1_boot.cpp</in>
+              </df>
+              <df name="interfaces-impl">
+                <in>arch_registers_impl.h</in>
+                <in>bsp.cpp</in>
+                <in>bsp_impl.h</in>
+              </df>
+            </df>
+            <df name="stm32f469ni_stm32f469i-disco">
+              <df name="core">
+                <in>stage_1_boot.cpp</in>
+              </df>
+              <df name="interfaces-impl">
+                <in>arch_registers_impl.h</in>
+                <in>bsp.cpp</in>
+                <in>bsp_impl.h</in>
+              </df>
+            </df>
+          </df>
+          <df name="cortexM7_stm32f7">
+            <df name="common">
+              <df name="interfaces-impl">
+                <in>delays.cpp</in>
+                <in>gpio_impl.cpp</in>
+                <in>gpio_impl.h</in>
+                <in>portability.cpp</in>
+                <in>portability_impl.h</in>
+              </df>
+              <in>arch_settings.h</in>
+            </df>
+            <df name="stm32f746zg_nucleo">
+              <df name="core">
+                <in>stage_1_boot.cpp</in>
+              </df>
+              <df name="interfaces-impl">
+                <in>arch_registers_impl.h</in>
+                <in>bsp.cpp</in>
+                <in>bsp_impl.h</in>
+              </df>
+            </df>
+          </df>
+          <df name="cortexM7_stm32h7">
+            <df name="common">
+              <df name="drivers">
+                <in>pll.cpp</in>
+                <in>pll.h</in>
+              </df>
+              <df name="interfaces-impl">
+                <in>delays.cpp</in>
+                <in>gpio_impl.cpp</in>
+                <in>gpio_impl.h</in>
+                <in>portability.cpp</in>
+                <in>portability_impl.h</in>
+              </df>
+              <in>arch_settings.h</in>
+            </df>
+            <df name="stm32h753xi_eval">
+              <df name="core">
+                <in>stage_1_boot.cpp</in>
+              </df>
+              <df name="interfaces-impl">
+                <in>arch_registers_impl.h</in>
+                <in>bsp.cpp</in>
+                <in>bsp_impl.h</in>
+              </df>
+            </df>
+          </df>
+        </df>
+        <df name="config">
+          <df name="arch">
+            <df name="arm7_lpc2000">
+              <df name="lpc2138_miosix_board">
+                <in>board_settings.h</in>
+              </df>
+            </df>
+            <df name="cortexM3_efm32gg">
+              <df name="efm32gg332f1024_wandstem">
+                <in>board_settings.h</in>
+              </df>
+            </df>
+            <df name="cortexM3_stm32">
+              <df name="stm32f100c8_microboard">
+                <in>board_settings.h</in>
+              </df>
+              <df name="stm32f100cb_tempsensor">
+                <in>board_settings.h</in>
+              </df>
+              <df name="stm32f100rb_stm32vldiscovery">
+                <in>board_settings.h</in>
+              </df>
+              <df name="stm32f100rc_solertegiard">
+                <in>board_settings.h</in>
+              </df>
+              <df name="stm32f103c8_breakout">
+                <in>board_settings.h</in>
+              </df>
+              <df name="stm32f103cb_als_mainboard_rev2">
+                <in>board_settings.h</in>
+              </df>
+              <df name="stm32f103ve_mp3v2">
+                <in>board_settings.h</in>
+              </df>
+              <df name="stm32f103ve_strive_mini">
+                <in>board_settings.h</in>
+              </df>
+              <df name="stm32f103ze_redbull_v2">
+                <in>board_settings.h</in>
+              </df>
+              <df name="stm32f103ze_stm3210e-eval">
+                <in>board_settings.h</in>
+              </df>
+            </df>
+            <df name="cortexM3_stm32f2">
+              <df name="stm32f205_generic">
+                <in>board_settings.h</in>
+              </df>
+              <df name="stm32f205rc_skyward_stormtrooper">
+                <in>board_settings.h</in>
+              </df>
+              <df name="stm32f205rg_sony-newman">
+                <in>board_settings.h</in>
+              </df>
+              <df name="stm32f207ig_stm3220g-eval">
+                <in>board_settings.h</in>
+              </df>
+              <df name="stm32f207ze_als_camboard">
+                <in>board_settings.h</in>
+              </df>
+              <df name="stm32f207zg_EthBoardV2">
+                <in>board_settings.h</in>
+              </df>
+            </df>
+            <df name="cortexM3_stm32l1">
+              <df name="stm32l151c8_als_mainboard">
+                <in>board_settings.h</in>
+              </df>
+            </df>
+            <df name="cortexM4_stm32f4">
+              <df name="stm32f401re_nucleo">
+                <in>board_settings.h</in>
+              </df>
+              <df name="stm32f401vc_stm32f4discovery">
+                <in>board_settings.h</in>
+              </df>
+              <df name="stm32f407vg_bitsboard">
+                <in>board_settings.h</in>
+              </df>
+              <df name="stm32f407vg_stm32f4discovery">
+                <in>board_settings.h</in>
+              </df>
+              <df name="stm32f407vg_thermal_test_chip">
+                <in>board_settings.h</in>
+              </df>
+              <df name="stm32f411re_nucleo">
+                <in>board_settings.h</in>
+              </df>
+              <df name="stm32f429zi_oledboard2">
+                <in>board_settings.h</in>
+              </df>
+              <df name="stm32f429zi_skyward_anakin">
+                <in>board_settings.h</in>
+              </df>
+              <df name="stm32f429zi_skyward_homeone">
+                <in>board_settings.h</in>
+              </df>
+              <df name="stm32f429zi_stm32f4discovery">
+                <in>board_settings.h</in>
+              </df>
+              <df name="stm32f469ni_stm32f469i-disco">
+                <in>board_settings.h</in>
+              </df>
+            </df>
+            <df name="cortexM7_stm32f7">
+              <df name="stm32f746zg_nucleo">
+                <in>board_settings.h</in>
+              </df>
+            </df>
+            <df name="cortexM7_stm32h7">
+              <df name="stm32h753xi_eval">
+                <in>board_settings.h</in>
+              </df>
+            </df>
+          </df>
+          <in>miosix_settings.h</in>
+        </df>
+        <df name="e20">
+          <in>callback.h</in>
+          <in>e20.cpp</in>
+          <in>e20.h</in>
+          <in>unmember.cpp</in>
+          <in>unmember.h</in>
+        </df>
+        <df name="filesystem">
+          <df name="console">
+            <in>console_device.cpp</in>
+            <in>console_device.h</in>
+          </df>
+          <df name="devfs">
+            <in>devfs.cpp</in>
+            <in>devfs.h</in>
+          </df>
+          <df name="fat32">
+            <in>ccsbcs.cpp</in>
+            <in>diskio.cpp</in>
+            <in>diskio.h</in>
+            <in>fat32.cpp</in>
+            <in>fat32.h</in>
+            <in>ff.cpp</in>
+            <in>ff.h</in>
+            <in>ffconf.h</in>
+            <in>integer.h</in>
+            <in>wtoupper.cpp</in>
+          </df>
+          <df name="mountpointfs">
+            <in>mountpointfs.cpp</in>
+            <in>mountpointfs.h</in>
+          </df>
+          <in>file.cpp</in>
+          <in>file.h</in>
+          <in>file_access.cpp</in>
+          <in>file_access.h</in>
+          <in>ioctl.h</in>
+          <in>stringpart.cpp</in>
+          <in>stringpart.h</in>
+        </df>
+        <df name="interfaces">
+          <in>arch_registers.h</in>
+          <in>atomic_ops.h</in>
+          <in>bsp.h</in>
+          <in>delays.h</in>
+          <in>endianness.h</in>
+          <in>gpio.h</in>
+          <in>portability.h</in>
+        </df>
+        <df name="kernel">
+          <df name="scheduler">
+            <df name="control">
+              <in>control_scheduler.cpp</in>
+              <in>control_scheduler.h</in>
+              <in>control_scheduler_types.h</in>
+              <in>parameters.h</in>
+            </df>
+            <df name="edf">
+              <in>edf_scheduler.cpp</in>
+              <in>edf_scheduler.h</in>
+              <in>edf_scheduler_types.h</in>
+            </df>
+            <df name="priority">
+              <in>priority_scheduler.cpp</in>
+              <in>priority_scheduler.h</in>
+              <in>priority_scheduler_types.h</in>
+            </df>
+            <in>sched_types.h</in>
+            <in>scheduler.h</in>
+            <in>tick_interrupt.h</in>
+          </df>
+          <in>IRQDisplayPrint.cpp</in>
+          <in>IRQDisplayPrint.h</in>
+          <in>SystemMap.cpp</in>
+          <in>SystemMap.h</in>
+          <in>elf_program.cpp</in>
+          <in>elf_program.h</in>
+          <in>elf_types.h</in>
+          <in>error.cpp</in>
+          <in>error.h</in>
+          <in>intrusive.h</in>
+          <in>kernel.cpp</in>
+          <in>kernel.h</in>
+          <in>logging.h</in>
+          <in>process.cpp</in>
+          <in>process.h</in>
+          <in>process_pool.cpp</in>
+          <in>process_pool.h</in>
+          <in>pthread.cpp</in>
+          <in>pthread_private.h</in>
+          <in>queue.h</in>
+          <in>stage_2_boot.cpp</in>
+          <in>stage_2_boot.h</in>
+          <in>sync.cpp</in>
+          <in>sync.h</in>
+          <in>timeconversion.cpp</in>
+          <in>timeconversion.h</in>
+        </df>
+        <df name="stdlib_integration">
+          <in>libc_integration.cpp</in>
+          <in>libc_integration.h</in>
+          <in>libstdcpp_integration.cpp</in>
+          <in>libstdcpp_integration.h</in>
+        </df>
+        <df name="util">
+          <in>crc16.cpp</in>
+          <in>crc16.h</in>
+          <in>lcd44780.cpp</in>
+          <in>lcd44780.h</in>
+          <in>software_i2c.h</in>
+          <in>software_spi.h</in>
+          <in>unicode.cpp</in>
+          <in>unicode.h</in>
+          <in>util.cpp</in>
+          <in>util.h</in>
+          <in>version.cpp</in>
+          <in>version.h</in>
+        </df>
+        <in>miosix.h</in>
+      </df>
+      <df name="miosix_np_2">
+      </df>
+      <df name="NN">
+        <df name="Drivers">
+          <df name="CMSIS">
+            <df name="Core">
+              <df name="Include">
+                <in>cmsis_armcc.h</in>
+                <in>cmsis_armclang.h</in>
+                <in>cmsis_compiler.h</in>
+                <in>cmsis_gcc.h</in>
+                <in>cmsis_iccarm.h</in>
+                <in>cmsis_version.h</in>
+                <in>core_armv8mbl.h</in>
+                <in>core_armv8mml.h</in>
+                <in>core_cm0.h</in>
+                <in>core_cm0plus.h</in>
+                <in>core_cm1.h</in>
+                <in>core_cm23.h</in>
+                <in>core_cm3.h</in>
+                <in>core_cm33.h</in>
+                <in>core_cm4.h</in>
+                <in>core_cm7.h</in>
+                <in>core_sc000.h</in>
+                <in>core_sc300.h</in>
+                <in>mpu_armv7.h</in>
+                <in>mpu_armv8.h</in>
+                <in>tz_context.h</in>
+              </df>
+              <df name="Template">
+                <df name="ARMv8-M">
+                  <in>main_s.c</in>
+                  <in>tz_context.c</in>
+                </df>
+              </df>
+            </df>
+            <df name="Core_A">
+              <df name="Include">
+                <in>cmsis_armcc.h</in>
+                <in>cmsis_armclang.h</in>
+                <in>cmsis_compiler.h</in>
+                <in>cmsis_cp15.h</in>
+                <in>cmsis_gcc.h</in>
+                <in>cmsis_iccarm.h</in>
+                <in>core_ca.h</in>
+                <in>irq_ctrl.h</in>
+              </df>
+              <df name="Source">
+                <in>irq_ctrl_gic.c</in>
+              </df>
+            </df>
+            <df name="Device">
+              <df name="ST">
+                <df name="STM32F4xx">
+                  <df name="Include">
+                    <in>stm32f401xc.h</in>
+                    <in>stm32f401xe.h</in>
+                    <in>stm32f405xx.h</in>
+                    <in>stm32f407xx.h</in>
+                    <in>stm32f410cx.h</in>
+                    <in>stm32f410rx.h</in>
+                    <in>stm32f410tx.h</in>
+                    <in>stm32f411xe.h</in>
+                    <in>stm32f412cx.h</in>
+                    <in>stm32f412rx.h</in>
+                    <in>stm32f412vx.h</in>
+                    <in>stm32f412zx.h</in>
+                    <in>stm32f413xx.h</in>
+                    <in>stm32f415xx.h</in>
+                    <in>stm32f417xx.h</in>
+                    <in>stm32f423xx.h</in>
+                    <in>stm32f427xx.h</in>
+                    <in>stm32f429xx.h</in>
+                    <in>stm32f437xx.h</in>
+                    <in>stm32f439xx.h</in>
+                    <in>stm32f446xx.h</in>
+                    <in>stm32f469xx.h</in>
+                    <in>stm32f479xx.h</in>
+                    <in>stm32f4xx.h</in>
+                    <in>system_stm32f4xx.h</in>
+                  </df>
+                  <df name="Source">
+                    <df name="Templates">
+                      <df name="arm">
+                        <in>startup_stm32f401xc.s</in>
+                        <in>startup_stm32f401xe.s</in>
+                        <in>startup_stm32f405xx.s</in>
+                        <in>startup_stm32f407xx.s</in>
+                        <in>startup_stm32f410cx.s</in>
+                        <in>startup_stm32f410rx.s</in>
+                        <in>startup_stm32f410tx.s</in>
+                        <in>startup_stm32f411xe.s</in>
+                        <in>startup_stm32f412cx.s</in>
+                        <in>startup_stm32f412rx.s</in>
+                        <in>startup_stm32f412vx.s</in>
+                        <in>startup_stm32f412zx.s</in>
+                        <in>startup_stm32f413xx.s</in>
+                        <in>startup_stm32f415xx.s</in>
+                        <in>startup_stm32f417xx.s</in>
+                        <in>startup_stm32f423xx.s</in>
+                        <in>startup_stm32f427xx.s</in>
+                        <in>startup_stm32f429xx.s</in>
+                        <in>startup_stm32f437xx.s</in>
+                        <in>startup_stm32f439xx.s</in>
+                        <in>startup_stm32f446xx.s</in>
+                        <in>startup_stm32f469xx.s</in>
+                        <in>startup_stm32f479xx.s</in>
+                      </df>
+                      <df name="gcc">
+                        <in>startup_stm32f401xc.s</in>
+                        <in>startup_stm32f401xe.s</in>
+                        <in>startup_stm32f405xx.s</in>
+                        <in>startup_stm32f407xx.s</in>
+                        <in>startup_stm32f410cx.s</in>
+                        <in>startup_stm32f410rx.s</in>
+                        <in>startup_stm32f410tx.s</in>
+                        <in>startup_stm32f411xe.s</in>
+                        <in>startup_stm32f412cx.s</in>
+                        <in>startup_stm32f412rx.s</in>
+                        <in>startup_stm32f412vx.s</in>
+                        <in>startup_stm32f412zx.s</in>
+                        <in>startup_stm32f413xx.s</in>
+                        <in>startup_stm32f415xx.s</in>
+                        <in>startup_stm32f417xx.s</in>
+                        <in>startup_stm32f423xx.s</in>
+                        <in>startup_stm32f427xx.s</in>
+                        <in>startup_stm32f429xx.s</in>
+                        <in>startup_stm32f437xx.s</in>
+                        <in>startup_stm32f439xx.s</in>
+                        <in>startup_stm32f446xx.s</in>
+                        <in>startup_stm32f469xx.s</in>
+                        <in>startup_stm32f479xx.s</in>
+                      </df>
+                      <df name="iar">
+                        <df name="linker">
+                        </df>
+                        <in>startup_stm32f401xc.s</in>
+                        <in>startup_stm32f401xe.s</in>
+                        <in>startup_stm32f405xx.s</in>
+                        <in>startup_stm32f407xx.s</in>
+                        <in>startup_stm32f410cx.s</in>
+                        <in>startup_stm32f410rx.s</in>
+                        <in>startup_stm32f410tx.s</in>
+                        <in>startup_stm32f411xe.s</in>
+                        <in>startup_stm32f412cx.s</in>
+                        <in>startup_stm32f412rx.s</in>
+                        <in>startup_stm32f412vx.s</in>
+                        <in>startup_stm32f412zx.s</in>
+                        <in>startup_stm32f413xx.s</in>
+                        <in>startup_stm32f415xx.s</in>
+                        <in>startup_stm32f417xx.s</in>
+                        <in>startup_stm32f423xx.s</in>
+                        <in>startup_stm32f427xx.s</in>
+                        <in>startup_stm32f429xx.s</in>
+                        <in>startup_stm32f437xx.s</in>
+                        <in>startup_stm32f439xx.s</in>
+                        <in>startup_stm32f446xx.s</in>
+                        <in>startup_stm32f469xx.s</in>
+                        <in>startup_stm32f479xx.s</in>
+                      </df>
+                      <in>system_stm32f4xx.c</in>
+                    </df>
+                  </df>
+                </df>
+              </df>
+            </df>
+            <df name="DSP">
+              <df name="DSP_Lib_TestSuite">
+                <df name="Common">
+                  <df name="inc">
+                    <df name="basic_math_tests">
+                      <in>basic_math_templates.h</in>
+                      <in>basic_math_test_data.h</in>
+                      <in>basic_math_test_group.h</in>
+                      <in>basic_math_tests.h</in>
+                    </df>
+                    <df name="complex_math_tests">
+                      <in>complex_math_templates.h</in>
+                      <in>complex_math_test_data.h</in>
+                      <in>complex_math_test_group.h</in>
+                      <in>complex_math_tests.h</in>
+                    </df>
+                    <df name="controller_tests">
+                      <in>controller_templates.h</in>
+                      <in>controller_test_data.h</in>
+                      <in>controller_test_group.h</in>
+                      <in>controller_tests.h</in>
+                    </df>
+                    <df name="fast_math_tests">
+                      <in>fast_math_templates.h</in>
+                      <in>fast_math_test_data.h</in>
+                      <in>fast_math_test_group.h</in>
+                    </df>
+                    <df name="filtering_tests">
+                      <in>filtering_templates.h</in>
+                      <in>filtering_test_data.h</in>
+                      <in>filtering_test_group.h</in>
+                      <in>filtering_tests.h</in>
+                    </df>
+                    <df name="intrinsics_tests">
+                      <in>intrinsics_templates.h</in>
+                      <in>intrinsics_test_data.h</in>
+                      <in>intrinsics_test_group.h</in>
+                    </df>
+                    <df name="matrix_tests">
+                      <in>matrix_templates.h</in>
+                      <in>matrix_test_data.h</in>
+                      <in>matrix_test_group.h</in>
+                      <in>matrix_tests.h</in>
+                    </df>
+                    <df name="statistics_tests">
+                      <in>statistics_templates.h</in>
+                      <in>statistics_test_data.h</in>
+                      <in>statistics_test_group.h</in>
+                      <in>statistics_tests.h</in>
+                    </df>
+                    <df name="support_tests">
+                      <in>support_templates.h</in>
+                      <in>support_test_data.h</in>
+                      <in>support_test_group.h</in>
+                      <in>support_tests.h</in>
+                    </df>
+                    <df name="templates">
+                      <in>template.h</in>
+                      <in>test_templates.h</in>
+                    </df>
+                    <df name="transform_tests">
+                      <in>transform_templates.h</in>
+                      <in>transform_test_data.h</in>
+                      <in>transform_test_group.h</in>
+                      <in>transform_tests.h</in>
+                    </df>
+                    <in>all_tests.h</in>
+                    <in>math_helper.h</in>
+                    <in>type_abbrev.h</in>
+                  </df>
+                  <df name="JTest">
+                    <df name="inc">
+                      <df name="arr_desc">
+                        <in>arr_desc.h</in>
+                      </df>
+                      <df name="opt_arg">
+                        <in>opt_arg.h</in>
+                        <in>pp_narg.h</in>
+                        <in>splice.h</in>
+                      </df>
+                      <df name="util">
+                        <in>util.h</in>
+                      </df>
+                      <in>jtest.h</in>
+                      <in>jtest_cycle.h</in>
+                      <in>jtest_define.h</in>
+                      <in>jtest_fw.h</in>
+                      <in>jtest_group.h</in>
+                      <in>jtest_group_call.h</in>
+                      <in>jtest_group_define.h</in>
+                      <in>jtest_pf.h</in>
+                      <in>jtest_systick.h</in>
+                      <in>jtest_test.h</in>
+                      <in>jtest_test_call.h</in>
+                      <in>jtest_test_define.h</in>
+                      <in>jtest_test_ret.h</in>
+                      <in>jtest_util.h</in>
+                    </df>
+                    <df name="src">
+                      <in>jtest_cycle.c</in>
+                      <in>jtest_dump_str_segments.c</in>
+                      <in>jtest_fw.c</in>
+                      <in>jtest_trigger_action.c</in>
+                    </df>
+                  </df>
+                  <df name="platform">
+                    <df name="ARMCC">
+                      <in>Retarget.c</in>
+                      <in>startup_armv6-m.s</in>
+                      <in>startup_armv7-m.s</in>
+                    </df>
+                    <df name="GCC">
+                      <in>Retarget.c</in>
+                    </df>
+                    <in>system_ARMCM0.c</in>
+                    <in>system_ARMCM23.c</in>
+                    <in>system_ARMCM3.c</in>
+                    <in>system_ARMCM33.c</in>
+                    <in>system_ARMCM4.c</in>
+                    <in>system_ARMCM7.c</in>
+                    <in>system_ARMSC000.c</in>
+                    <in>system_ARMSC300.c</in>
+                    <in>system_ARMv8MBL.c</in>
+                    <in>system_ARMv8MML.c</in>
+                    <in>system_generic.c</in>
+                  </df>
+                  <df name="src">
+                    <df name="basic_math_tests">
+                      <in>abs_tests.c</in>
+                      <in>add_tests.c</in>
+                      <in>basic_math_test_common_data.c</in>
+                      <in>basic_math_test_group.c</in>
+                      <in>dot_prod_tests.c</in>
+                      <in>mult_tests.c</in>
+                      <in>negate_tests.c</in>
+                      <in>offset_tests.c</in>
+                      <in>scale_tests.c</in>
+                      <in>shift_tests.c</in>
+                      <in>sub_tests.c</in>
+                    </df>
+                    <df name="complex_math_tests">
+                      <in>cmplx_conj_tests.c</in>
+                      <in>cmplx_dot_prod_tests.c</in>
+                      <in>cmplx_mag_squared_tests.c</in>
+                      <in>cmplx_mag_tests.c</in>
+                      <in>cmplx_mult_cmplx_tests.c</in>
+                      <in>cmplx_mult_real_test.c</in>
+                      <in>complex_math_test_common_data.c</in>
+                      <in>complex_math_test_group.c</in>
+                    </df>
+                    <df name="controller_tests">
+                      <in>controller_test_common_data.c</in>
+                      <in>controller_test_group.c</in>
+                      <in>pid_reset_tests.c</in>
+                      <in>pid_tests.c</in>
+                      <in>sin_cos_tests.c</in>
+                    </df>
+                    <df name="fast_math_tests">
+                      <in>fast_math_tests.c</in>
+                      <in>fast_math_tests_common_data.c</in>
+                    </df>
+                    <df name="filtering_tests">
+                      <in>biquad_tests.c</in>
+                      <in>conv_tests.c</in>
+                      <in>correlate_tests.c</in>
+                      <in>filtering_test_common_data.c</in>
+                      <in>filtering_test_group.c</in>
+                      <in>fir_tests.c</in>
+                      <in>iir_tests.c</in>
+                      <in>lms_tests.c</in>
+                    </df>
+                    <df name="intrinsics_tests">
+                      <in>intrinsics_tests.c</in>
+                      <in>intrinsics_tests_common_data.c</in>
+                    </df>
+                    <df name="matrix_tests">
+                      <in>mat_add_tests.c</in>
+                      <in>mat_cmplx_mult_tests.c</in>
+                      <in>mat_init_tests.c</in>
+                      <in>mat_inverse_tests.c</in>
+                      <in>mat_mult_fast_tests.c</in>
+                      <in>mat_mult_tests.c</in>
+                      <in>mat_scale_tests.c</in>
+                      <in>mat_sub_tests.c</in>
+                      <in>mat_trans_tests.c</in>
+                      <in>matrix_test_common_data.c</in>
+                      <in>matrix_test_group.c</in>
+                    </df>
+                    <df name="statistics_tests">
+                      <in>max_tests.c</in>
+                      <in>mean_tests.c</in>
+                      <in>min_tests.c</in>
+                      <in>power_tests.c</in>
+                      <in>rms_tests.c</in>
+                      <in>statistics_test_common_data.c</in>
+                      <in>statistics_test_group.c</in>
+                      <in>std_tests.c</in>
+                      <in>var_tests.c</in>
+                    </df>
+                    <df name="support_tests">
+                      <in>copy_tests.c</in>
+                      <in>fill_tests.c</in>
+                      <in>support_test_common_data.c</in>
+                      <in>support_test_group.c</in>
+                      <in>x_to_y_tests.c</in>
+                    </df>
+                    <df name="transform_tests">
+                      <in>cfft_family_tests.c</in>
+                      <in>cfft_tests.c</in>
+                      <in>dct4_tests.c</in>
+                      <in>rfft_fast_tests.c</in>
+                      <in>rfft_tests.c</in>
+                      <in>transform_test_group.c</in>
+                      <in>transform_tests_common_data.c</in>
+                    </df>
+                    <in>all_tests.c</in>
+                    <in>main.c</in>
+                    <in>math_helper.c</in>
+                  </df>
+                </df>
+                <df name="RefLibs">
+                  <df name="inc">
+                    <in>ref.h</in>
+                  </df>
+                  <df name="src">
+                    <df name="BasicMathFunctions">
+                      <in>abs.c</in>
+                      <in>add.c</in>
+                      <in>dot_prod.c</in>
+                      <in>mult.c</in>
+                      <in>negate.c</in>
+                      <in>offset.c</in>
+                      <in>scale.c</in>
+                      <in>shift.c</in>
+                      <in>sub.c</in>
+                    </df>
+                    <df name="ComplexMathFunctions">
+                      <in>cmplx_conj.c</in>
+                      <in>cmplx_dot_prod.c</in>
+                      <in>cmplx_mag.c</in>
+                      <in>cmplx_mag_squared.c</in>
+                      <in>cmplx_mult_cmplx.c</in>
+                      <in>cmplx_mult_real.c</in>
+                    </df>
+                    <df name="ControllerFunctions">
+                      <in>pid.c</in>
+                      <in>sin_cos.c</in>
+                    </df>
+                    <df name="FastMathFunctions">
+                      <in>cos.c</in>
+                      <in>sin.c</in>
+                      <in>sqrt.c</in>
+                    </df>
+                    <df name="FilteringFunctions">
+                      <in>biquad.c</in>
+                      <in>conv.c</in>
+                      <in>correlate.c</in>
+                      <in>fir.c</in>
+                      <in>fir_decimate.c</in>
+                      <in>fir_interpolate.c</in>
+                      <in>fir_lattice.c</in>
+                      <in>fir_sparse.c</in>
+                      <in>iir_lattice.c</in>
+                      <in>lms.c</in>
+                    </df>
+                    <df name="HelperFunctions">
+                      <in>mat_helper.c</in>
+                      <in>ref_helper.c</in>
+                    </df>
+                    <df name="Intrinsics">
+                      <in>intrinsics.c</in>
+                    </df>
+                    <df name="MatrixFunctions">
+                      <in>mat_add.c</in>
+                      <in>mat_cmplx_mult.c</in>
+                      <in>mat_inverse.c</in>
+                      <in>mat_mult.c</in>
+                      <in>mat_scale.c</in>
+                      <in>mat_sub.c</in>
+                      <in>mat_trans.c</in>
+                    </df>
+                    <df name="StatisticsFunctions">
+                      <in>max.c</in>
+                      <in>mean.c</in>
+                      <in>min.c</in>
+                      <in>power.c</in>
+                      <in>rms.c</in>
+                      <in>std.c</in>
+                      <in>var.c</in>
+                    </df>
+                    <df name="SupportFunctions">
+                      <in>copy.c</in>
+                      <in>fill.c</in>
+                      <in>fixed_to_fixed.c</in>
+                      <in>fixed_to_float.c</in>
+                      <in>float_to_fixed.c</in>
+                    </df>
+                    <df name="TransformFunctions">
+                      <in>bitreversal.c</in>
+                      <in>cfft.c</in>
+                      <in>dct4.c</in>
+                      <in>rfft.c</in>
+                    </df>
+                  </df>
+                </df>
+              </df>
+              <df name="Examples">
+                <df name="ARM">
+                  <df name="arm_class_marks_example">
+                    <in>arm_class_marks_example_f32.c</in>
+                  </df>
+                  <df name="arm_convolution_example">
+                    <in>arm_convolution_example_f32.c</in>
+                    <in>math_helper.c</in>
+                    <in>math_helper.h</in>
+                  </df>
+                  <df name="arm_dotproduct_example">
+                    <in>arm_dotproduct_example_f32.c</in>
+                  </df>
+                  <df name="arm_fft_bin_example">
+                    <in>arm_fft_bin_data.c</in>
+                    <in>arm_fft_bin_example_f32.c</in>
+                  </df>
+                  <df name="arm_fir_example">
+                    <in>arm_fir_data.c</in>
+                    <in>arm_fir_example_f32.c</in>
+                    <in>math_helper.c</in>
+                    <in>math_helper.h</in>
+                  </df>
+                  <df name="arm_graphic_equalizer_example">
+                    <in>arm_graphic_equalizer_data.c</in>
+                    <in>arm_graphic_equalizer_example_q31.c</in>
+                    <in>math_helper.c</in>
+                    <in>math_helper.h</in>
+                  </df>
+                  <df name="arm_linear_interp_example">
+                    <in>arm_linear_interp_data.c</in>
+                    <in>arm_linear_interp_example_f32.c</in>
+                    <in>math_helper.c</in>
+                    <in>math_helper.h</in>
+                  </df>
+                  <df name="arm_matrix_example">
+                    <in>arm_matrix_example_f32.c</in>
+                    <in>math_helper.c</in>
+                    <in>math_helper.h</in>
+                  </df>
+                  <df name="arm_signal_converge_example">
+                    <in>arm_signal_converge_data.c</in>
+                    <in>arm_signal_converge_example_f32.c</in>
+                    <in>math_helper.c</in>
+                    <in>math_helper.h</in>
+                  </df>
+                  <df name="arm_sin_cos_example">
+                    <in>arm_sin_cos_example_f32.c</in>
+                  </df>
+                  <df name="arm_variance_example">
+                    <in>arm_variance_example_f32.c</in>
+                  </df>
+                </df>
+              </df>
+              <df name="Include">
+                <in>arm_common_tables.h</in>
+                <in>arm_const_structs.h</in>
+                <in>arm_math.h</in>
+              </df>
+              <df name="Source">
+                <df name="BasicMathFunctions">
+                  <in>arm_abs_f32.c</in>
+                  <in>arm_abs_q15.c</in>
+                  <in>arm_abs_q31.c</in>
+                  <in>arm_abs_q7.c</in>
+                  <in>arm_add_f32.c</in>
+                  <in>arm_add_q15.c</in>
+                  <in>arm_add_q31.c</in>
+                  <in>arm_add_q7.c</in>
+                  <in>arm_dot_prod_f32.c</in>
+                  <in>arm_dot_prod_q15.c</in>
+                  <in>arm_dot_prod_q31.c</in>
+                  <in>arm_dot_prod_q7.c</in>
+                  <in>arm_mult_f32.c</in>
+                  <in>arm_mult_q15.c</in>
+                  <in>arm_mult_q31.c</in>
+                  <in>arm_mult_q7.c</in>
+                  <in>arm_negate_f32.c</in>
+                  <in>arm_negate_q15.c</in>
+                  <in>arm_negate_q31.c</in>
+                  <in>arm_negate_q7.c</in>
+                  <in>arm_offset_f32.c</in>
+                  <in>arm_offset_q15.c</in>
+                  <in>arm_offset_q31.c</in>
+                  <in>arm_offset_q7.c</in>
+                  <in>arm_scale_f32.c</in>
+                  <in>arm_scale_q15.c</in>
+                  <in>arm_scale_q31.c</in>
+                  <in>arm_scale_q7.c</in>
+                  <in>arm_shift_q15.c</in>
+                  <in>arm_shift_q31.c</in>
+                  <in>arm_shift_q7.c</in>
+                  <in>arm_sub_f32.c</in>
+                  <in>arm_sub_q15.c</in>
+                  <in>arm_sub_q31.c</in>
+                  <in>arm_sub_q7.c</in>
+                </df>
+                <df name="CommonTables">
+                  <in>arm_common_tables.c</in>
+                  <in>arm_const_structs.c</in>
+                </df>
+                <df name="ComplexMathFunctions">
+                  <in>arm_cmplx_conj_f32.c</in>
+                  <in>arm_cmplx_conj_q15.c</in>
+                  <in>arm_cmplx_conj_q31.c</in>
+                  <in>arm_cmplx_dot_prod_f32.c</in>
+                  <in>arm_cmplx_dot_prod_q15.c</in>
+                  <in>arm_cmplx_dot_prod_q31.c</in>
+                  <in>arm_cmplx_mag_f32.c</in>
+                  <in>arm_cmplx_mag_q15.c</in>
+                  <in>arm_cmplx_mag_q31.c</in>
+                  <in>arm_cmplx_mag_squared_f32.c</in>
+                  <in>arm_cmplx_mag_squared_q15.c</in>
+                  <in>arm_cmplx_mag_squared_q31.c</in>
+                  <in>arm_cmplx_mult_cmplx_f32.c</in>
+                  <in>arm_cmplx_mult_cmplx_q15.c</in>
+                  <in>arm_cmplx_mult_cmplx_q31.c</in>
+                  <in>arm_cmplx_mult_real_f32.c</in>
+                  <in>arm_cmplx_mult_real_q15.c</in>
+                  <in>arm_cmplx_mult_real_q31.c</in>
+                </df>
+                <df name="ControllerFunctions">
+                  <in>arm_pid_init_f32.c</in>
+                  <in>arm_pid_init_q15.c</in>
+                  <in>arm_pid_init_q31.c</in>
+                  <in>arm_pid_reset_f32.c</in>
+                  <in>arm_pid_reset_q15.c</in>
+                  <in>arm_pid_reset_q31.c</in>
+                  <in>arm_sin_cos_f32.c</in>
+                  <in>arm_sin_cos_q31.c</in>
+                </df>
+                <df name="FastMathFunctions">
+                  <in>arm_cos_f32.c</in>
+                  <in>arm_cos_q15.c</in>
+                  <in>arm_cos_q31.c</in>
+                  <in>arm_sin_f32.c</in>
+                  <in>arm_sin_q15.c</in>
+                  <in>arm_sin_q31.c</in>
+                  <in>arm_sqrt_q15.c</in>
+                  <in>arm_sqrt_q31.c</in>
+                </df>
+                <df name="FilteringFunctions">
+                  <in>arm_biquad_cascade_df1_32x64_init_q31.c</in>
+                  <in>arm_biquad_cascade_df1_32x64_q31.c</in>
+                  <in>arm_biquad_cascade_df1_f32.c</in>
+                  <in>arm_biquad_cascade_df1_fast_q15.c</in>
+                  <in>arm_biquad_cascade_df1_fast_q31.c</in>
+                  <in>arm_biquad_cascade_df1_init_f32.c</in>
+                  <in>arm_biquad_cascade_df1_init_q15.c</in>
+                  <in>arm_biquad_cascade_df1_init_q31.c</in>
+                  <in>arm_biquad_cascade_df1_q15.c</in>
+                  <in>arm_biquad_cascade_df1_q31.c</in>
+                  <in>arm_biquad_cascade_df2T_f32.c</in>
+                  <in>arm_biquad_cascade_df2T_f64.c</in>
+                  <in>arm_biquad_cascade_df2T_init_f32.c</in>
+                  <in>arm_biquad_cascade_df2T_init_f64.c</in>
+                  <in>arm_biquad_cascade_stereo_df2T_f32.c</in>
+                  <in>arm_biquad_cascade_stereo_df2T_init_f32.c</in>
+                  <in>arm_conv_f32.c</in>
+                  <in>arm_conv_fast_opt_q15.c</in>
+                  <in>arm_conv_fast_q15.c</in>
+                  <in>arm_conv_fast_q31.c</in>
+                  <in>arm_conv_opt_q15.c</in>
+                  <in>arm_conv_opt_q7.c</in>
+                  <in>arm_conv_partial_f32.c</in>
+                  <in>arm_conv_partial_fast_opt_q15.c</in>
+                  <in>arm_conv_partial_fast_q15.c</in>
+                  <in>arm_conv_partial_fast_q31.c</in>
+                  <in>arm_conv_partial_opt_q15.c</in>
+                  <in>arm_conv_partial_opt_q7.c</in>
+                  <in>arm_conv_partial_q15.c</in>
+                  <in>arm_conv_partial_q31.c</in>
+                  <in>arm_conv_partial_q7.c</in>
+                  <in>arm_conv_q15.c</in>
+                  <in>arm_conv_q31.c</in>
+                  <in>arm_conv_q7.c</in>
+                  <in>arm_correlate_f32.c</in>
+                  <in>arm_correlate_fast_opt_q15.c</in>
+                  <in>arm_correlate_fast_q15.c</in>
+                  <in>arm_correlate_fast_q31.c</in>
+                  <in>arm_correlate_opt_q15.c</in>
+                  <in>arm_correlate_opt_q7.c</in>
+                  <in>arm_correlate_q15.c</in>
+                  <in>arm_correlate_q31.c</in>
+                  <in>arm_correlate_q7.c</in>
+                  <in>arm_fir_decimate_f32.c</in>
+                  <in>arm_fir_decimate_fast_q15.c</in>
+                  <in>arm_fir_decimate_fast_q31.c</in>
+                  <in>arm_fir_decimate_init_f32.c</in>
+                  <in>arm_fir_decimate_init_q15.c</in>
+                  <in>arm_fir_decimate_init_q31.c</in>
+                  <in>arm_fir_decimate_q15.c</in>
+                  <in>arm_fir_decimate_q31.c</in>
+                  <in>arm_fir_f32.c</in>
+                  <in>arm_fir_fast_q15.c</in>
+                  <in>arm_fir_fast_q31.c</in>
+                  <in>arm_fir_init_f32.c</in>
+                  <in>arm_fir_init_q15.c</in>
+                  <in>arm_fir_init_q31.c</in>
+                  <in>arm_fir_init_q7.c</in>
+                  <in>arm_fir_interpolate_f32.c</in>
+                  <in>arm_fir_interpolate_init_f32.c</in>
+                  <in>arm_fir_interpolate_init_q15.c</in>
+                  <in>arm_fir_interpolate_init_q31.c</in>
+                  <in>arm_fir_interpolate_q15.c</in>
+                  <in>arm_fir_interpolate_q31.c</in>
+                  <in>arm_fir_lattice_f32.c</in>
+                  <in>arm_fir_lattice_init_f32.c</in>
+                  <in>arm_fir_lattice_init_q15.c</in>
+                  <in>arm_fir_lattice_init_q31.c</in>
+                  <in>arm_fir_lattice_q15.c</in>
+                  <in>arm_fir_lattice_q31.c</in>
+                  <in>arm_fir_q15.c</in>
+                  <in>arm_fir_q31.c</in>
+                  <in>arm_fir_q7.c</in>
+                  <in>arm_fir_sparse_f32.c</in>
+                  <in>arm_fir_sparse_init_f32.c</in>
+                  <in>arm_fir_sparse_init_q15.c</in>
+                  <in>arm_fir_sparse_init_q31.c</in>
+                  <in>arm_fir_sparse_init_q7.c</in>
+                  <in>arm_fir_sparse_q15.c</in>
+                  <in>arm_fir_sparse_q31.c</in>
+                  <in>arm_fir_sparse_q7.c</in>
+                  <in>arm_iir_lattice_f32.c</in>
+                  <in>arm_iir_lattice_init_f32.c</in>
+                  <in>arm_iir_lattice_init_q15.c</in>
+                  <in>arm_iir_lattice_init_q31.c</in>
+                  <in>arm_iir_lattice_q15.c</in>
+                  <in>arm_iir_lattice_q31.c</in>
+                  <in>arm_lms_f32.c</in>
+                  <in>arm_lms_init_f32.c</in>
+                  <in>arm_lms_init_q15.c</in>
+                  <in>arm_lms_init_q31.c</in>
+                  <in>arm_lms_norm_f32.c</in>
+                  <in>arm_lms_norm_init_f32.c</in>
+                  <in>arm_lms_norm_init_q15.c</in>
+                  <in>arm_lms_norm_init_q31.c</in>
+                  <in>arm_lms_norm_q15.c</in>
+                  <in>arm_lms_norm_q31.c</in>
+                  <in>arm_lms_q15.c</in>
+                  <in>arm_lms_q31.c</in>
+                </df>
+                <df name="MatrixFunctions">
+                  <in>arm_mat_add_f32.c</in>
+                  <in>arm_mat_add_q15.c</in>
+                  <in>arm_mat_add_q31.c</in>
+                  <in>arm_mat_cmplx_mult_f32.c</in>
+                  <in>arm_mat_cmplx_mult_q15.c</in>
+                  <in>arm_mat_cmplx_mult_q31.c</in>
+                  <in>arm_mat_init_f32.c</in>
+                  <in>arm_mat_init_q15.c</in>
+                  <in>arm_mat_init_q31.c</in>
+                  <in>arm_mat_inverse_f32.c</in>
+                  <in>arm_mat_inverse_f64.c</in>
+                  <in>arm_mat_mult_f32.c</in>
+                  <in>arm_mat_mult_fast_q15.c</in>
+                  <in>arm_mat_mult_fast_q31.c</in>
+                  <in>arm_mat_mult_q15.c</in>
+                  <in>arm_mat_mult_q31.c</in>
+                  <in>arm_mat_scale_f32.c</in>
+                  <in>arm_mat_scale_q15.c</in>
+                  <in>arm_mat_scale_q31.c</in>
+                  <in>arm_mat_sub_f32.c</in>
+                  <in>arm_mat_sub_q15.c</in>
+                  <in>arm_mat_sub_q31.c</in>
+                  <in>arm_mat_trans_f32.c</in>
+                  <in>arm_mat_trans_q15.c</in>
+                  <in>arm_mat_trans_q31.c</in>
+                </df>
+                <df name="StatisticsFunctions">
+                  <in>arm_max_f32.c</in>
+                  <in>arm_max_q15.c</in>
+                  <in>arm_max_q31.c</in>
+                  <in>arm_max_q7.c</in>
+                  <in>arm_mean_f32.c</in>
+                  <in>arm_mean_q15.c</in>
+                  <in>arm_mean_q31.c</in>
+                  <in>arm_mean_q7.c</in>
+                  <in>arm_min_f32.c</in>
+                  <in>arm_min_q15.c</in>
+                  <in>arm_min_q31.c</in>
+                  <in>arm_min_q7.c</in>
+                  <in>arm_power_f32.c</in>
+                  <in>arm_power_q15.c</in>
+                  <in>arm_power_q31.c</in>
+                  <in>arm_power_q7.c</in>
+                  <in>arm_rms_f32.c</in>
+                  <in>arm_rms_q15.c</in>
+                  <in>arm_rms_q31.c</in>
+                  <in>arm_std_f32.c</in>
+                  <in>arm_std_q15.c</in>
+                  <in>arm_std_q31.c</in>
+                  <in>arm_var_f32.c</in>
+                  <in>arm_var_q15.c</in>
+                  <in>arm_var_q31.c</in>
+                </df>
+                <df name="SupportFunctions">
+                  <in>arm_copy_f32.c</in>
+                  <in>arm_copy_q15.c</in>
+                  <in>arm_copy_q31.c</in>
+                  <in>arm_copy_q7.c</in>
+                  <in>arm_fill_f32.c</in>
+                  <in>arm_fill_q15.c</in>
+                  <in>arm_fill_q31.c</in>
+                  <in>arm_fill_q7.c</in>
+                  <in>arm_float_to_q15.c</in>
+                  <in>arm_float_to_q31.c</in>
+                  <in>arm_float_to_q7.c</in>
+                  <in>arm_q15_to_float.c</in>
+                  <in>arm_q15_to_q31.c</in>
+                  <in>arm_q15_to_q7.c</in>
+                  <in>arm_q31_to_float.c</in>
+                  <in>arm_q31_to_q15.c</in>
+                  <in>arm_q31_to_q7.c</in>
+                  <in>arm_q7_to_float.c</in>
+                  <in>arm_q7_to_q15.c</in>
+                  <in>arm_q7_to_q31.c</in>
+                </df>
+                <df name="TransformFunctions">
+                  <in>arm_bitreversal.c</in>
+                  <in>arm_cfft_f32.c</in>
+                  <in>arm_cfft_q15.c</in>
+                  <in>arm_cfft_q31.c</in>
+                  <in>arm_cfft_radix2_f32.c</in>
+                  <in>arm_cfft_radix2_init_f32.c</in>
+                  <in>arm_cfft_radix2_init_q15.c</in>
+                  <in>arm_cfft_radix2_init_q31.c</in>
+                  <in>arm_cfft_radix2_q15.c</in>
+                  <in>arm_cfft_radix2_q31.c</in>
+                  <in>arm_cfft_radix4_f32.c</in>
+                  <in>arm_cfft_radix4_init_f32.c</in>
+                  <in>arm_cfft_radix4_init_q15.c</in>
+                  <in>arm_cfft_radix4_init_q31.c</in>
+                  <in>arm_cfft_radix4_q15.c</in>
+                  <in>arm_cfft_radix4_q31.c</in>
+                  <in>arm_cfft_radix8_f32.c</in>
+                  <in>arm_dct4_f32.c</in>
+                  <in>arm_dct4_init_f32.c</in>
+                  <in>arm_dct4_init_q15.c</in>
+                  <in>arm_dct4_init_q31.c</in>
+                  <in>arm_dct4_q15.c</in>
+                  <in>arm_dct4_q31.c</in>
+                  <in>arm_rfft_f32.c</in>
+                  <in>arm_rfft_fast_f32.c</in>
+                  <in>arm_rfft_fast_init_f32.c</in>
+                  <in>arm_rfft_init_f32.c</in>
+                  <in>arm_rfft_init_q15.c</in>
+                  <in>arm_rfft_init_q31.c</in>
+                  <in>arm_rfft_q15.c</in>
+                  <in>arm_rfft_q31.c</in>
+                </df>
+              </df>
+            </df>
+            <df name="Include">
+              <in>cmsis_armcc.h</in>
+              <in>cmsis_armclang.h</in>
+              <in>cmsis_compiler.h</in>
+              <in>cmsis_gcc.h</in>
+              <in>cmsis_iccarm.h</in>
+              <in>cmsis_version.h</in>
+              <in>core_armv8mbl.h</in>
+              <in>core_armv8mml.h</in>
+              <in>core_cm0.h</in>
+              <in>core_cm0plus.h</in>
+              <in>core_cm1.h</in>
+              <in>core_cm23.h</in>
+              <in>core_cm3.h</in>
+              <in>core_cm33.h</in>
+              <in>core_cm4.h</in>
+              <in>core_cm7.h</in>
+              <in>core_sc000.h</in>
+              <in>core_sc300.h</in>
+              <in>mpu_armv7.h</in>
+              <in>mpu_armv8.h</in>
+              <in>tz_context.h</in>
+            </df>
+            <df name="Lib">
+              <df name="ARM">
+              </df>
+              <df name="GCC">
+              </df>
+              <df name="IAR">
+              </df>
+            </df>
+            <df name="NN">
+              <df name="Examples">
+                <df name="ARM">
+                  <df name="arm_nn_examples">
+                    <df name="cifar10">
+                      <df name="RTE">
+                        <df name="_ARMCM0">
+                          <in>RTE_Components.h</in>
+                        </df>
+                        <df name="_ARMCM3">
+                          <in>RTE_Components.h</in>
+                        </df>
+                        <df name="_ARMCM4_FP">
+                          <in>RTE_Components.h</in>
+                        </df>
+                        <df name="_ARMCM7_SP">
+                          <in>RTE_Components.h</in>
+                        </df>
+                        <df name="Compiler">
+                          <in>EventRecorderConf.h</in>
+                        </df>
+                      </df>
+                      <in>arm_nnexamples_cifar10.cpp</in>
+                      <in>arm_nnexamples_cifar10_inputs.h</in>
+                      <in>arm_nnexamples_cifar10_parameter.h</in>
+                      <in>arm_nnexamples_cifar10_weights.h</in>
+                    </df>
+                    <df name="gru">
+                      <df name="RTE">
+                        <df name="_ARMCM0">
+                          <in>RTE_Components.h</in>
+                        </df>
+                        <df name="_ARMCM3">
+                          <in>RTE_Components.h</in>
+                        </df>
+                        <df name="_ARMCM4_FP">
+                          <in>RTE_Components.h</in>
+                        </df>
+                        <df name="_ARMCM7_SP">
+                          <in>RTE_Components.h</in>
+                        </df>
+                        <df name="Compiler">
+                          <in>EventRecorderConf.h</in>
+                        </df>
+                      </df>
+                      <in>arm_nnexamples_gru.cpp</in>
+                      <in>arm_nnexamples_gru_test_data.h</in>
+                    </df>
+                  </df>
+                </df>
+              </df>
+              <df name="Include">
+                <in>arm_nn_tables.h</in>
+                <in>arm_nnfunctions.h</in>
+                <in>arm_nnsupportfunctions.h</in>
+              </df>
+              <df name="NN_Lib_Tests">
+                <df name="nn_test">
+                  <df name="Ref_Implementations">
+                    <in>arm_convolve_HWC_q15_ref.c</in>
+                    <in>arm_convolve_HWC_q15_ref_nonsquare.c</in>
+                    <in>arm_convolve_HWC_q7_ref.c</in>
+                    <in>arm_convolve_HWC_q7_ref_nonsquare.c</in>
+                    <in>arm_depthwise_separable_conv_HWC_q7_ref.c</in>
+                    <in>arm_depthwise_separable_conv_HWC_q7_ref_nonsquare.c</in>
+                    <in>arm_fully_connected_mat_q7_vec_q15_opt_ref.c</in>
+                    <in>arm_fully_connected_mat_q7_vec_q15_ref.c</in>
+                    <in>arm_fully_connected_q15_opt_ref.c</in>
+                    <in>arm_fully_connected_q15_ref.c</in>
+                    <in>arm_fully_connected_q7_opt_ref.c</in>
+                    <in>arm_fully_connected_q7_ref.c</in>
+                    <in>arm_nn_mult_ref.c</in>
+                    <in>arm_pool_ref.c</in>
+                    <in>arm_relu_ref.c</in>
+                    <in>fully_connected_testing_weights.h</in>
+                    <in>ref_functions.h</in>
+                  </df>
+                  <df name="RTE">
+                    <df name="_ARMCM0">
+                      <in>RTE_Components.h</in>
+                    </df>
+                    <df name="_ARMCM3">
+                      <in>RTE_Components.h</in>
+                    </df>
+                    <df name="_ARMCM4_FP">
+                      <in>RTE_Components.h</in>
+                    </df>
+                    <df name="_ARMCM7_SP">
+                      <in>RTE_Components.h</in>
+                    </df>
+                  </df>
+                  <in>arm_nnexamples_nn_test.cpp</in>
+                  <in>arm_nnexamples_nn_test.h</in>
+                </df>
+              </df>
+              <df name="Source">
+                <df name="ActivationFunctions">
+                  <in>arm_nn_activations_q15.c</in>
+                  <in>arm_nn_activations_q7.c</in>
+                  <in>arm_relu_q15.c</in>
+                  <in>arm_relu_q7.c</in>
+                </df>
+                <df name="ConvolutionFunctions">
+                  <in>arm_convolve_1x1_HWC_q7_fast_nonsquare.c</in>
+                  <in>arm_convolve_HWC_q15_basic.c</in>
+                  <in>arm_convolve_HWC_q15_fast.c</in>
+                  <in>arm_convolve_HWC_q15_fast_nonsquare.c</in>
+                  <in>arm_convolve_HWC_q7_RGB.c</in>
+                  <in>arm_convolve_HWC_q7_basic.c</in>
+                  <in>arm_convolve_HWC_q7_basic_nonsquare.c</in>
+                  <in>arm_convolve_HWC_q7_fast.c</in>
+                  <in>arm_convolve_HWC_q7_fast_nonsquare.c</in>
+                  <in>arm_depthwise_separable_conv_HWC_q7.c</in>
+                  <in>arm_depthwise_separable_conv_HWC_q7_nonsquare.c</in>
+                  <in>arm_nn_mat_mult_kernel_q7_q15.c</in>
+                  <in>arm_nn_mat_mult_kernel_q7_q15_reordered.c</in>
+                </df>
+                <df name="FullyConnectedFunctions">
+                  <in>arm_fully_connected_mat_q7_vec_q15.c</in>
+                  <in>arm_fully_connected_mat_q7_vec_q15_opt.c</in>
+                  <in>arm_fully_connected_q15.c</in>
+                  <in>arm_fully_connected_q15_opt.c</in>
+                  <in>arm_fully_connected_q7.c</in>
+                  <in>arm_fully_connected_q7_opt.c</in>
+                </df>
+                <df name="NNSupportFunctions">
+                  <in>arm_nn_mult_q15.c</in>
+                  <in>arm_nn_mult_q7.c</in>
+                  <in>arm_nntables.c</in>
+                  <in>arm_q7_to_q15_no_shift.c</in>
+                  <in>arm_q7_to_q15_reordered_no_shift.c</in>
+                </df>
+                <df name="PoolingFunctions">
+                  <in>arm_pool_q7_HWC.c</in>
+                </df>
+                <df name="SoftmaxFunctions">
+                  <in>arm_softmax_q15.c</in>
+                  <in>arm_softmax_q7.c</in>
+                </df>
+              </df>
+            </df>
+            <df name="RTOS">
+              <df name="Template">
+                <in>cmsis_os.h</in>
+              </df>
+            </df>
+            <df name="RTOS2">
+              <df name="Include">
+                <in>cmsis_os2.h</in>
+                <in>os_tick.h</in>
+              </df>
+              <df name="Source">
+                <in>os_systick.c</in>
+                <in>os_tick_gtim.c</in>
+                <in>os_tick_ptim.c</in>
+              </df>
+              <df name="Template">
+                <in>cmsis_os.h</in>
+                <in>cmsis_os1.c</in>
+              </df>
+            </df>
+          </df>
+          <df name="STM32F4xx_HAL_Driver">
+            <df name="Inc">
+              <df name="Legacy">
+                <in>stm32_hal_legacy.h</in>
+                <in>stm32f4xx_hal_can_legacy.h</in>
+              </df>
+              <in>stm32_assert_template.h</in>
+              <in>stm32f4xx_hal.h</in>
+              <in>stm32f4xx_hal_adc.h</in>
+              <in>stm32f4xx_hal_adc_ex.h</in>
+              <in>stm32f4xx_hal_can.h</in>
+              <in>stm32f4xx_hal_cec.h</in>
+              <in>stm32f4xx_hal_conf_template.h</in>
+              <in>stm32f4xx_hal_cortex.h</in>
+              <in>stm32f4xx_hal_crc.h</in>
+              <in>stm32f4xx_hal_cryp.h</in>
+              <in>stm32f4xx_hal_cryp_ex.h</in>
+              <in>stm32f4xx_hal_dac.h</in>
+              <in>stm32f4xx_hal_dac_ex.h</in>
+              <in>stm32f4xx_hal_dcmi.h</in>
+              <in>stm32f4xx_hal_dcmi_ex.h</in>
+              <in>stm32f4xx_hal_def.h</in>
+              <in>stm32f4xx_hal_dfsdm.h</in>
+              <in>stm32f4xx_hal_dma.h</in>
+              <in>stm32f4xx_hal_dma2d.h</in>
+              <in>stm32f4xx_hal_dma_ex.h</in>
+              <in>stm32f4xx_hal_dsi.h</in>
+              <in>stm32f4xx_hal_eth.h</in>
+              <in>stm32f4xx_hal_exti.h</in>
+              <in>stm32f4xx_hal_flash.h</in>
+              <in>stm32f4xx_hal_flash_ex.h</in>
+              <in>stm32f4xx_hal_flash_ramfunc.h</in>
+              <in>stm32f4xx_hal_fmpi2c.h</in>
+              <in>stm32f4xx_hal_fmpi2c_ex.h</in>
+              <in>stm32f4xx_hal_gpio.h</in>
+              <in>stm32f4xx_hal_gpio_ex.h</in>
+              <in>stm32f4xx_hal_hash.h</in>
+              <in>stm32f4xx_hal_hash_ex.h</in>
+              <in>stm32f4xx_hal_hcd.h</in>
+              <in>stm32f4xx_hal_i2c.h</in>
+              <in>stm32f4xx_hal_i2c_ex.h</in>
+              <in>stm32f4xx_hal_i2s.h</in>
+              <in>stm32f4xx_hal_i2s_ex.h</in>
+              <in>stm32f4xx_hal_irda.h</in>
+              <in>stm32f4xx_hal_iwdg.h</in>
+              <in>stm32f4xx_hal_lptim.h</in>
+              <in>stm32f4xx_hal_ltdc.h</in>
+              <in>stm32f4xx_hal_ltdc_ex.h</in>
+              <in>stm32f4xx_hal_mmc.h</in>
+              <in>stm32f4xx_hal_nand.h</in>
+              <in>stm32f4xx_hal_nor.h</in>
+              <in>stm32f4xx_hal_pccard.h</in>
+              <in>stm32f4xx_hal_pcd.h</in>
+              <in>stm32f4xx_hal_pcd_ex.h</in>
+              <in>stm32f4xx_hal_pwr.h</in>
+              <in>stm32f4xx_hal_pwr_ex.h</in>
+              <in>stm32f4xx_hal_qspi.h</in>
+              <in>stm32f4xx_hal_rcc.h</in>
+              <in>stm32f4xx_hal_rcc_ex.h</in>
+              <in>stm32f4xx_hal_rng.h</in>
+              <in>stm32f4xx_hal_rtc.h</in>
+              <in>stm32f4xx_hal_rtc_ex.h</in>
+              <in>stm32f4xx_hal_sai.h</in>
+              <in>stm32f4xx_hal_sai_ex.h</in>
+              <in>stm32f4xx_hal_sd.h</in>
+              <in>stm32f4xx_hal_sdram.h</in>
+              <in>stm32f4xx_hal_smartcard.h</in>
+              <in>stm32f4xx_hal_smbus.h</in>
+              <in>stm32f4xx_hal_spdifrx.h</in>
+              <in>stm32f4xx_hal_spi.h</in>
+              <in>stm32f4xx_hal_sram.h</in>
+              <in>stm32f4xx_hal_tim.h</in>
+              <in>stm32f4xx_hal_tim_ex.h</in>
+              <in>stm32f4xx_hal_uart.h</in>
+              <in>stm32f4xx_hal_usart.h</in>
+              <in>stm32f4xx_hal_wwdg.h</in>
+              <in>stm32f4xx_ll_adc.h</in>
+              <in>stm32f4xx_ll_bus.h</in>
+              <in>stm32f4xx_ll_cortex.h</in>
+              <in>stm32f4xx_ll_crc.h</in>
+              <in>stm32f4xx_ll_dac.h</in>
+              <in>stm32f4xx_ll_dma.h</in>
+              <in>stm32f4xx_ll_dma2d.h</in>
+              <in>stm32f4xx_ll_exti.h</in>
+              <in>stm32f4xx_ll_fmc.h</in>
+              <in>stm32f4xx_ll_fsmc.h</in>
+              <in>stm32f4xx_ll_gpio.h</in>
+              <in>stm32f4xx_ll_i2c.h</in>
+              <in>stm32f4xx_ll_iwdg.h</in>
+              <in>stm32f4xx_ll_lptim.h</in>
+              <in>stm32f4xx_ll_pwr.h</in>
+              <in>stm32f4xx_ll_rcc.h</in>
+              <in>stm32f4xx_ll_rng.h</in>
+              <in>stm32f4xx_ll_rtc.h</in>
+              <in>stm32f4xx_ll_sdmmc.h</in>
+              <in>stm32f4xx_ll_spi.h</in>
+              <in>stm32f4xx_ll_system.h</in>
+              <in>stm32f4xx_ll_tim.h</in>
+              <in>stm32f4xx_ll_usart.h</in>
+              <in>stm32f4xx_ll_usb.h</in>
+              <in>stm32f4xx_ll_utils.h</in>
+              <in>stm32f4xx_ll_wwdg.h</in>
+            </df>
+            <df name="Src">
+              <in>stm32f4xx_hal.c</in>
+              <in>stm32f4xx_hal_adc.c</in>
+              <in>stm32f4xx_hal_adc_ex.c</in>
+              <in>stm32f4xx_hal_can.c</in>
+              <in>stm32f4xx_hal_cec.c</in>
+              <in>stm32f4xx_hal_cortex.c</in>
+              <in>stm32f4xx_hal_crc.c</in>
+              <in>stm32f4xx_hal_cryp.c</in>
+              <in>stm32f4xx_hal_cryp_ex.c</in>
+              <in>stm32f4xx_hal_dac.c</in>
+              <in>stm32f4xx_hal_dac_ex.c</in>
+              <in>stm32f4xx_hal_dcmi.c</in>
+              <in>stm32f4xx_hal_dcmi_ex.c</in>
+              <in>stm32f4xx_hal_dfsdm.c</in>
+              <in>stm32f4xx_hal_dma.c</in>
+              <in>stm32f4xx_hal_dma2d.c</in>
+              <in>stm32f4xx_hal_dma_ex.c</in>
+              <in>stm32f4xx_hal_dsi.c</in>
+              <in>stm32f4xx_hal_eth.c</in>
+              <in>stm32f4xx_hal_exti.c</in>
+              <in>stm32f4xx_hal_flash.c</in>
+              <in>stm32f4xx_hal_flash_ex.c</in>
+              <in>stm32f4xx_hal_flash_ramfunc.c</in>
+              <in>stm32f4xx_hal_fmpi2c.c</in>
+              <in>stm32f4xx_hal_fmpi2c_ex.c</in>
+              <in>stm32f4xx_hal_gpio.c</in>
+              <in>stm32f4xx_hal_hash.c</in>
+              <in>stm32f4xx_hal_hash_ex.c</in>
+              <in>stm32f4xx_hal_hcd.c</in>
+              <in>stm32f4xx_hal_i2c.c</in>
+              <in>stm32f4xx_hal_i2c_ex.c</in>
+              <in>stm32f4xx_hal_i2s.c</in>
+              <in>stm32f4xx_hal_i2s_ex.c</in>
+              <in>stm32f4xx_hal_irda.c</in>
+              <in>stm32f4xx_hal_iwdg.c</in>
+              <in>stm32f4xx_hal_lptim.c</in>
+              <in>stm32f4xx_hal_ltdc.c</in>
+              <in>stm32f4xx_hal_ltdc_ex.c</in>
+              <in>stm32f4xx_hal_mmc.c</in>
+              <in>stm32f4xx_hal_msp_template.c</in>
+              <in>stm32f4xx_hal_nand.c</in>
+              <in>stm32f4xx_hal_nor.c</in>
+              <in>stm32f4xx_hal_pccard.c</in>
+              <in>stm32f4xx_hal_pcd.c</in>
+              <in>stm32f4xx_hal_pcd_ex.c</in>
+              <in>stm32f4xx_hal_pwr.c</in>
+              <in>stm32f4xx_hal_pwr_ex.c</in>
+              <in>stm32f4xx_hal_qspi.c</in>
+              <in>stm32f4xx_hal_rcc.c</in>
+              <in>stm32f4xx_hal_rcc_ex.c</in>
+              <in>stm32f4xx_hal_rng.c</in>
+              <in>stm32f4xx_hal_rtc.c</in>
+              <in>stm32f4xx_hal_rtc_ex.c</in>
+              <in>stm32f4xx_hal_sai.c</in>
+              <in>stm32f4xx_hal_sai_ex.c</in>
+              <in>stm32f4xx_hal_sd.c</in>
+              <in>stm32f4xx_hal_sdram.c</in>
+              <in>stm32f4xx_hal_smartcard.c</in>
+              <in>stm32f4xx_hal_smbus.c</in>
+              <in>stm32f4xx_hal_spdifrx.c</in>
+              <in>stm32f4xx_hal_spi.c</in>
+              <in>stm32f4xx_hal_sram.c</in>
+              <in>stm32f4xx_hal_tim.c</in>
+              <in>stm32f4xx_hal_tim_ex.c</in>
+              <in>stm32f4xx_hal_timebase_rtc_alarm_template.c</in>
+              <in>stm32f4xx_hal_timebase_rtc_wakeup_template.c</in>
+              <in>stm32f4xx_hal_timebase_tim_template.c</in>
+              <in>stm32f4xx_hal_uart.c</in>
+              <in>stm32f4xx_hal_usart.c</in>
+              <in>stm32f4xx_hal_wwdg.c</in>
+              <in>stm32f4xx_ll_adc.c</in>
+              <in>stm32f4xx_ll_crc.c</in>
+              <in>stm32f4xx_ll_dac.c</in>
+              <in>stm32f4xx_ll_dma.c</in>
+              <in>stm32f4xx_ll_dma2d.c</in>
+              <in>stm32f4xx_ll_exti.c</in>
+              <in>stm32f4xx_ll_fmc.c</in>
+              <in>stm32f4xx_ll_fsmc.c</in>
+              <in>stm32f4xx_ll_gpio.c</in>
+              <in>stm32f4xx_ll_i2c.c</in>
+              <in>stm32f4xx_ll_lptim.c</in>
+              <in>stm32f4xx_ll_pwr.c</in>
+              <in>stm32f4xx_ll_rcc.c</in>
+              <in>stm32f4xx_ll_rng.c</in>
+              <in>stm32f4xx_ll_rtc.c</in>
+              <in>stm32f4xx_ll_sdmmc.c</in>
+              <in>stm32f4xx_ll_spi.c</in>
+              <in>stm32f4xx_ll_tim.c</in>
+              <in>stm32f4xx_ll_usart.c</in>
+              <in>stm32f4xx_ll_usb.c</in>
+              <in>stm32f4xx_ll_utils.c</in>
+            </df>
+          </df>
+        </df>
+        <df name="Inc">
+          <in>RTE_Components.h</in>
+          <in>app_x-cube-ai.h</in>
+          <in>bsp_ai.h</in>
+          <in>constants_ai.h</in>
+          <in>main.h</in>
+          <in>stm32f4xx_hal_conf.h</in>
+          <in>stm32f4xx_it.h</in>
+        </df>
+        <df name="MDK-ARM">
+          <df name="AOS_Project">
+          </df>
+          <df name="DebugConfig">
+          </df>
+          <df name="RTE">
+            <df name="_AOS_Project">
+              <in>RTE_Components.h</in>
+            </df>
+          </df>
+          <in>startup_stm32f401xe.s</in>
+        </df>
+        <df name="Middlewares">
+          <df name="ST">
+            <df name="AI">
+              <df name="AI">
+                <df name="data">
+                  <in>estimator_data.c</in>
+                  <in>estimator_data.h</in>
+                </df>
+                <df name="include">
+                  <in>ai_common_config.h</in>
+                  <in>ai_datatypes_defines.h</in>
+                  <in>ai_datatypes_format.h</in>
+                  <in>ai_datatypes_internal.h</in>
+                  <in>ai_log.h</in>
+                  <in>ai_math_helpers.h</in>
+                  <in>ai_memory_manager.h</in>
+                  <in>ai_network_inspector.h</in>
+                  <in>ai_platform.h</in>
+                  <in>ai_platform_interface.h</in>
+                  <in>core_common.h</in>
+                  <in>core_conv2d_kernels_float.h</in>
+                  <in>core_datatypes.h</in>
+                  <in>core_lists.h</in>
+                  <in>core_log.h</in>
+                  <in>core_net_inspect.h</in>
+                  <in>core_net_inspect_interface.h</in>
+                  <in>core_utils.h</in>
+                  <in>datatypes_network.h</in>
+                  <in>estimator.h</in>
+                  <in>formats_list.h</in>
+                  <in>layers.h</in>
+                  <in>layers_common.h</in>
+                  <in>layers_conv2d.h</in>
+                  <in>layers_cycles_estimation.h</in>
+                  <in>layers_generic.h</in>
+                  <in>layers_lambda.h</in>
+                  <in>layers_list.h</in>
+                  <in>layers_nl.h</in>
+                  <in>layers_norm.h</in>
+                  <in>layers_override.h</in>
+                  <in>layers_pool.h</in>
+                  <in>layers_rnn.h</in>
+                  <in>platform_config.h</in>
+                </df>
+                <df name="lib">
+                </df>
+                <df name="src">
+                  <in>estimator.c</in>
+                </df>
+              </df>
+            </df>
+          </df>
+        </df>
+        <df name="Src">
+          <in>app_x-cube-ai.c</in>
+          <in>main.c</in>
+          <in>stm32f4xx_hal_msp.c</in>
+          <in>stm32f4xx_it.c</in>
+          <in>system_stm32f4xx.c</in>
+        </df>
+      </df>
+      <in>I2CHelper.h</in>
+      <in>LSM6DSLSensor.cpp</in>
+      <in>LSM6DSLSensor.h</in>
+      <in>LSM6DSL_acc_gyro_driver.c</in>
+      <in>LSM6DSL_acc_gyro_driver.h</in>
+      <in>main.cpp</in>
+    </df>
+  </logicalFolder>
+  <projectmakefile>miosix_np_2-Makefile.mk</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>2</platform>
+      </toolsSet>
+      <compile>
+        <compiledirpicklist>
+          <compiledirpicklistitem>.</compiledirpicklistitem>
+          <compiledirpicklistitem>${AUTO_FOLDER}</compiledirpicklistitem>
+        </compiledirpicklist>
+        <compiledir>${AUTO_FOLDER}</compiledir>
+        <compilecommandpicklist>
+          <compilecommandpicklistitem>${MAKE} ${ITEM_NAME}.o</compilecommandpicklistitem>
+          <compilecommandpicklistitem>${AUTO_COMPILE}</compilecommandpicklistitem>
+        </compilecommandpicklist>
+        <compilecommand>${AUTO_COMPILE}</compilecommand>
+      </compile>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <rundir></rundir>
+        <buildfirst>true</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+    <conf name="lpc2138_miosix_board" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>2</platform>
+      </toolsSet>
+      <compile>
+        <compiledirpicklist>
+          <compiledirpicklistitem>.</compiledirpicklistitem>
+          <compiledirpicklistitem>${AUTO_FOLDER}</compiledirpicklistitem>
+        </compiledirpicklist>
+        <compiledir>${AUTO_FOLDER}</compiledir>
+        <compilecommandpicklist>
+          <compilecommandpicklistitem>${MAKE} ${ITEM_NAME}.o</compilecommandpicklistitem>
+          <compilecommandpicklistitem>${AUTO_COMPILE}</compilecommandpicklistitem>
+        </compilecommandpicklist>
+        <compilecommand>${AUTO_COMPILE}</compilecommand>
+      </compile>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <rundir></rundir>
+        <buildfirst>true</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+    <conf name="stm32f103ze_stm3210e-eval" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>2</platform>
+      </toolsSet>
+      <compile>
+        <compiledirpicklist>
+          <compiledirpicklistitem>.</compiledirpicklistitem>
+          <compiledirpicklistitem>${AUTO_FOLDER}</compiledirpicklistitem>
+        </compiledirpicklist>
+        <compiledir>${AUTO_FOLDER}</compiledir>
+        <compilecommandpicklist>
+          <compilecommandpicklistitem>${MAKE} ${ITEM_NAME}.o</compilecommandpicklistitem>
+          <compilecommandpicklistitem>${AUTO_COMPILE}</compilecommandpicklistitem>
+        </compilecommandpicklist>
+        <compilecommand>${AUTO_COMPILE}</compilecommand>
+      </compile>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <rundir></rundir>
+        <buildfirst>true</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+    <conf name="stm32f103ve_mp3v2" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>2</platform>
+      </toolsSet>
+      <compile>
+        <compiledirpicklist>
+          <compiledirpicklistitem>.</compiledirpicklistitem>
+          <compiledirpicklistitem>${AUTO_FOLDER}</compiledirpicklistitem>
+        </compiledirpicklist>
+        <compiledir>${AUTO_FOLDER}</compiledir>
+        <compilecommandpicklist>
+          <compilecommandpicklistitem>${MAKE} ${ITEM_NAME}.o</compilecommandpicklistitem>
+          <compilecommandpicklistitem>${AUTO_COMPILE}</compilecommandpicklistitem>
+        </compilecommandpicklist>
+        <compilecommand>${AUTO_COMPILE}</compilecommand>
+      </compile>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <rundir></rundir>
+        <buildfirst>true</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+    <conf name="stm32f100rb_stm32vldiscovery" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>2</platform>
+      </toolsSet>
+      <compile>
+        <compiledirpicklist>
+          <compiledirpicklistitem>.</compiledirpicklistitem>
+          <compiledirpicklistitem>${AUTO_FOLDER}</compiledirpicklistitem>
+        </compiledirpicklist>
+        <compiledir>${AUTO_FOLDER}</compiledir>
+        <compilecommandpicklist>
+          <compilecommandpicklistitem>${MAKE} ${ITEM_NAME}.o</compilecommandpicklistitem>
+          <compilecommandpicklistitem>${AUTO_COMPILE}</compilecommandpicklistitem>
+        </compilecommandpicklist>
+        <compilecommand>${AUTO_COMPILE}</compilecommand>
+      </compile>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <rundir></rundir>
+        <buildfirst>true</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+    <conf name="stm32f103ve_strive_mini" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>2</platform>
+      </toolsSet>
+      <compile>
+        <compiledirpicklist>
+          <compiledirpicklistitem>.</compiledirpicklistitem>
+          <compiledirpicklistitem>${AUTO_FOLDER}</compiledirpicklistitem>
+        </compiledirpicklist>
+        <compiledir>${AUTO_FOLDER}</compiledir>
+        <compilecommandpicklist>
+          <compilecommandpicklistitem>${MAKE} ${ITEM_NAME}.o</compilecommandpicklistitem>
+          <compilecommandpicklistitem>${AUTO_COMPILE}</compilecommandpicklistitem>
+        </compilecommandpicklist>
+        <compilecommand>${AUTO_COMPILE}</compilecommand>
+      </compile>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <rundir></rundir>
+        <buildfirst>true</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+    <conf name="stm32f103ze_redbull_v2" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>2</platform>
+      </toolsSet>
+      <compile>
+        <compiledirpicklist>
+          <compiledirpicklistitem>.</compiledirpicklistitem>
+          <compiledirpicklistitem>${AUTO_FOLDER}</compiledirpicklistitem>
+        </compiledirpicklist>
+        <compiledir>${AUTO_FOLDER}</compiledir>
+        <compilecommandpicklist>
+          <compilecommandpicklistitem>${MAKE} ${ITEM_NAME}.o</compilecommandpicklistitem>
+          <compilecommandpicklistitem>${AUTO_COMPILE}</compilecommandpicklistitem>
+        </compilecommandpicklist>
+        <compilecommand>${AUTO_COMPILE}</compilecommand>
+      </compile>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <rundir></rundir>
+        <buildfirst>true</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+    <conf name="stm32f407vg_stm32f4discovery" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>2</platform>
+      </toolsSet>
+      <compile>
+        <compiledirpicklist>
+          <compiledirpicklistitem>.</compiledirpicklistitem>
+          <compiledirpicklistitem>${AUTO_FOLDER}</compiledirpicklistitem>
+        </compiledirpicklist>
+        <compiledir>${AUTO_FOLDER}</compiledir>
+        <compilecommandpicklist>
+          <compilecommandpicklistitem>${MAKE} ${ITEM_NAME}.o</compilecommandpicklistitem>
+          <compilecommandpicklistitem>${AUTO_COMPILE}</compilecommandpicklistitem>
+        </compilecommandpicklist>
+        <compilecommand>${AUTO_COMPILE}</compilecommand>
+      </compile>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <rundir></rundir>
+        <buildfirst>true</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+    <conf name="stm32f207ig_stm3220g-eval" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>2</platform>
+      </toolsSet>
+      <compile>
+        <compiledirpicklist>
+          <compiledirpicklistitem>.</compiledirpicklistitem>
+          <compiledirpicklistitem>${AUTO_FOLDER}</compiledirpicklistitem>
+        </compiledirpicklist>
+        <compiledir>${AUTO_FOLDER}</compiledir>
+        <compilecommandpicklist>
+          <compilecommandpicklistitem>${MAKE} ${ITEM_NAME}.o</compilecommandpicklistitem>
+          <compilecommandpicklistitem>${AUTO_COMPILE}</compilecommandpicklistitem>
+        </compilecommandpicklist>
+        <compilecommand>${AUTO_COMPILE}</compilecommand>
+      </compile>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <rundir></rundir>
+        <buildfirst>true</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+    <conf name="stm32f207zg_ethboard_v2" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>2</platform>
+      </toolsSet>
+      <compile>
+        <compiledirpicklist>
+          <compiledirpicklistitem>.</compiledirpicklistitem>
+          <compiledirpicklistitem>${AUTO_FOLDER}</compiledirpicklistitem>
+        </compiledirpicklist>
+        <compiledir>${AUTO_FOLDER}</compiledir>
+        <compilecommandpicklist>
+          <compilecommandpicklistitem>${MAKE} ${ITEM_NAME}.o</compilecommandpicklistitem>
+          <compilecommandpicklistitem>${AUTO_COMPILE}</compilecommandpicklistitem>
+        </compilecommandpicklist>
+        <compilecommand>${AUTO_COMPILE}</compilecommand>
+      </compile>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <rundir></rundir>
+        <buildfirst>true</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+    <conf name="stm32f207ze_als_camboard" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>2</platform>
+      </toolsSet>
+      <compile>
+        <compiledirpicklist>
+          <compiledirpicklistitem>.</compiledirpicklistitem>
+          <compiledirpicklistitem>${AUTO_FOLDER}</compiledirpicklistitem>
+        </compiledirpicklist>
+        <compiledir>${AUTO_FOLDER}</compiledir>
+        <compilecommandpicklist>
+          <compilecommandpicklistitem>${MAKE} ${ITEM_NAME}.o</compilecommandpicklistitem>
+          <compilecommandpicklistitem>${AUTO_COMPILE}</compilecommandpicklistitem>
+        </compilecommandpicklist>
+        <compilecommand>${AUTO_COMPILE}</compilecommand>
+      </compile>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <rundir></rundir>
+        <buildfirst>true</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+    <conf name="stm32l151c8_als_mainboard" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>2</platform>
+      </toolsSet>
+      <compile>
+        <compiledirpicklist>
+          <compiledirpicklistitem>.</compiledirpicklistitem>
+          <compiledirpicklistitem>${AUTO_FOLDER}</compiledirpicklistitem>
+        </compiledirpicklist>
+        <compiledir>${AUTO_FOLDER}</compiledir>
+        <compilecommandpicklist>
+          <compilecommandpicklistitem>${MAKE} ${ITEM_NAME}.o</compilecommandpicklistitem>
+          <compilecommandpicklistitem>${AUTO_COMPILE}</compilecommandpicklistitem>
+        </compilecommandpicklist>
+        <compilecommand>${AUTO_COMPILE}</compilecommand>
+      </compile>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <rundir></rundir>
+        <buildfirst>true</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+    <conf name="stm32f407vg_bitsboard" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>2</platform>
+      </toolsSet>
+      <compile>
+        <compiledirpicklist>
+          <compiledirpicklistitem>.</compiledirpicklistitem>
+          <compiledirpicklistitem>${AUTO_FOLDER}</compiledirpicklistitem>
+        </compiledirpicklist>
+        <compiledir>${AUTO_FOLDER}</compiledir>
+        <compilecommandpicklist>
+          <compilecommandpicklistitem>${MAKE} ${ITEM_NAME}.o</compilecommandpicklistitem>
+          <compilecommandpicklistitem>${AUTO_COMPILE}</compilecommandpicklistitem>
+        </compilecommandpicklist>
+        <compilecommand>${AUTO_COMPILE}</compilecommand>
+      </compile>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <rundir></rundir>
+        <buildfirst>true</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+    <conf name="stm32f205rg_sony-newman" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>2</platform>
+      </toolsSet>
+      <compile>
+        <compiledirpicklist>
+          <compiledirpicklistitem>.</compiledirpicklistitem>
+          <compiledirpicklistitem>${AUTO_FOLDER}</compiledirpicklistitem>
+        </compiledirpicklist>
+        <compiledir>${AUTO_FOLDER}</compiledir>
+        <compilecommandpicklist>
+          <compilecommandpicklistitem>${MAKE} ${ITEM_NAME}.o</compilecommandpicklistitem>
+          <compilecommandpicklistitem>${AUTO_COMPILE}</compilecommandpicklistitem>
+        </compilecommandpicklist>
+        <compilecommand>${AUTO_COMPILE}</compilecommand>
+      </compile>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <rundir></rundir>
+        <buildfirst>true</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+    <conf name="stm32f429zi_stm32f4discovery" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>2</platform>
+      </toolsSet>
+      <compile>
+        <compiledirpicklist>
+          <compiledirpicklistitem>.</compiledirpicklistitem>
+          <compiledirpicklistitem>${AUTO_FOLDER}</compiledirpicklistitem>
+        </compiledirpicklist>
+        <compiledir>${AUTO_FOLDER}</compiledir>
+        <compilecommandpicklist>
+          <compilecommandpicklistitem>${MAKE} ${ITEM_NAME}.o</compilecommandpicklistitem>
+          <compilecommandpicklistitem>${AUTO_COMPILE}</compilecommandpicklistitem>
+        </compilecommandpicklist>
+        <compilecommand>${AUTO_COMPILE}</compilecommand>
+      </compile>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <rundir></rundir>
+        <buildfirst>true</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+    <conf name="stm32f103cb_als_mainboard_rev2" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>2</platform>
+      </toolsSet>
+      <compile>
+        <compiledirpicklist>
+          <compiledirpicklistitem>.</compiledirpicklistitem>
+          <compiledirpicklistitem>${AUTO_FOLDER}</compiledirpicklistitem>
+        </compiledirpicklist>
+        <compiledir>${AUTO_FOLDER}</compiledir>
+        <compilecommandpicklist>
+          <compilecommandpicklistitem>${MAKE} ${ITEM_NAME}.o</compilecommandpicklistitem>
+          <compilecommandpicklistitem>${AUTO_COMPILE}</compilecommandpicklistitem>
+        </compilecommandpicklist>
+        <compilecommand>${AUTO_COMPILE}</compilecommand>
+      </compile>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <rundir></rundir>
+        <buildfirst>true</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+    <conf name="stm32f100cb_tempsensor" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>2</platform>
+      </toolsSet>
+      <compile>
+        <compiledirpicklist>
+          <compiledirpicklistitem>.</compiledirpicklistitem>
+          <compiledirpicklistitem>${AUTO_FOLDER}</compiledirpicklistitem>
+        </compiledirpicklist>
+        <compiledir>${AUTO_FOLDER}</compiledir>
+        <compilecommandpicklist>
+          <compilecommandpicklistitem>${MAKE} ${ITEM_NAME}.o</compilecommandpicklistitem>
+          <compilecommandpicklistitem>${AUTO_COMPILE}</compilecommandpicklistitem>
+        </compilecommandpicklist>
+        <compilecommand>${AUTO_COMPILE}</compilecommand>
+      </compile>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <rundir></rundir>
+        <buildfirst>true</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+    <conf name="stm32f429zi_oledboard2" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>2</platform>
+      </toolsSet>
+      <compile>
+        <compiledirpicklist>
+          <compiledirpicklistitem>.</compiledirpicklistitem>
+          <compiledirpicklistitem>${AUTO_FOLDER}</compiledirpicklistitem>
+        </compiledirpicklist>
+        <compiledir>${AUTO_FOLDER}</compiledir>
+        <compilecommandpicklist>
+          <compilecommandpicklistitem>${MAKE} ${ITEM_NAME}.o</compilecommandpicklistitem>
+          <compilecommandpicklistitem>${AUTO_COMPILE}</compilecommandpicklistitem>
+        </compilecommandpicklist>
+        <compilecommand>${AUTO_COMPILE}</compilecommand>
+      </compile>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <rundir></rundir>
+        <buildfirst>true</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+    <conf name="efm32gg332f1024_wandstem" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>2</platform>
+      </toolsSet>
+      <compile>
+        <compiledirpicklist>
+          <compiledirpicklistitem>.</compiledirpicklistitem>
+          <compiledirpicklistitem>${AUTO_FOLDER}</compiledirpicklistitem>
+        </compiledirpicklist>
+        <compiledir>${AUTO_FOLDER}</compiledir>
+        <compilecommandpicklist>
+          <compilecommandpicklistitem>${MAKE} ${ITEM_NAME}.o</compilecommandpicklistitem>
+          <compilecommandpicklistitem>${AUTO_COMPILE}</compilecommandpicklistitem>
+        </compilecommandpicklist>
+        <compilecommand>${AUTO_COMPILE}</compilecommand>
+      </compile>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <rundir></rundir>
+        <buildfirst>true</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+    <conf name="stm32f411re_nucleo" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>3</platform>
+      </toolsSet>
+      <compile>
+        <compiledirpicklist>
+          <compiledirpicklistitem>.</compiledirpicklistitem>
+          <compiledirpicklistitem>${AUTO_FOLDER}</compiledirpicklistitem>
+        </compiledirpicklist>
+        <compiledir>${AUTO_FOLDER}</compiledir>
+        <compilecommandpicklist>
+          <compilecommandpicklistitem>${MAKE} ${ITEM_NAME}.o</compilecommandpicklistitem>
+          <compilecommandpicklistitem>${AUTO_COMPILE}</compilecommandpicklistitem>
+        </compilecommandpicklist>
+        <compilecommand>${AUTO_COMPILE}</compilecommand>
+      </compile>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <rundir></rundir>
+        <buildfirst>true</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+    <conf name="stm32f429zi_skyward_anakin" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>2</platform>
+      </toolsSet>
+      <compile>
+        <compiledirpicklist>
+          <compiledirpicklistitem>.</compiledirpicklistitem>
+          <compiledirpicklistitem>${AUTO_FOLDER}</compiledirpicklistitem>
+        </compiledirpicklist>
+        <compiledir>${AUTO_FOLDER}</compiledir>
+        <compilecommandpicklist>
+          <compilecommandpicklistitem>${MAKE} ${ITEM_NAME}.o</compilecommandpicklistitem>
+          <compilecommandpicklistitem>${AUTO_COMPILE}</compilecommandpicklistitem>
+        </compilecommandpicklist>
+        <compilecommand>${AUTO_COMPILE}</compilecommand>
+      </compile>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <rundir></rundir>
+        <buildfirst>true</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+  </confs>
+</configurationDescriptor>
